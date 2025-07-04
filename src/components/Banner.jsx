@@ -26,17 +26,17 @@ function Banner() {
     >
       <SwiperSlide>
         <div className="w-full">
-          <img src="/images/Banner_HANDA PILIPINAS 2025-01.jpg" alt="" />
+          <img src="/images/banners/Banner_HANDA PILIPINAS 2025-01.jpg" alt="" />
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className="w-full">
-          <img src="/images/Banner_HANDA PILIPINAS 2025-01.jpg" alt="" />
+          <img src="/images/banners/Banner_HANDA PILIPINAS 2025-01.jpg" alt="" />
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className="w-full">
-          <img src="/images/Banner_HANDA PILIPINAS 2025-01.jpg" alt="" />
+          <img src="/images/banners/Banner_HANDA PILIPINAS 2025-01.jpg" alt="" />
         </div>
       </SwiperSlide>
     </Swiper>

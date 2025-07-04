@@ -187,7 +187,7 @@ function Footer() {
           </div>
         </div>
         <div className="mt-10 flex flex-col items-center justify-between border-t border-gray-50 py-10">
-          <img src="/images/DOST.png" alt="" className="mb-2 h-24" />
+          <img src="/images/logos/DOST.png" alt="" className="mb-2 h-24" />
           <p className="text-center text-sm text-gray-50 md:text-lg">
             Copyright © 2025 Handa Pilipinas - All rights reserved.
           </p>

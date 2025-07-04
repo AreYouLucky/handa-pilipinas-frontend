@@ -15,7 +15,7 @@ function Navbar() {
       <div className="max-w-screen-3xl mx-auto flex flex-wrap items-center justify-between p-4 md:p-2">
         <Link to="/">
           <img
-            src="/images/Theme_HANDA PILIPINAS 2025.png"
+            src="/images/logos/Theme_HANDA PILIPINAS 2025.png"
             className="flex h-8 items-center space-x-3 border border-gray-800 md:h-20 rtl:space-x-reverse"
             alt="Logo"
           />
