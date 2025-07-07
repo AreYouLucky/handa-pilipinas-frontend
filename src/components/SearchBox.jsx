@@ -28,7 +28,7 @@ export default function SearchBox() {
     };
 
     return (
-        <div className="relative w-full max-w-md min-w-96 mx-auto">
+        <div className="relative w-full max-w-md min-w-80 mx-auto">
             <input
                 type="text"
                 value={query}

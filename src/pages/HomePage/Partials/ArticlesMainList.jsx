@@ -26,8 +26,8 @@ function ArticlesMainList({ articles = [] }) {
     }, [articles]);
 
     return (
-        <section className="py-5">
-            <div className="max-w-screen-2xl mx-auto md:py-12 py-4 md:pb-1 text-gray-50 grid md:grid-cols-3 md:gap-x-20">
+        <section className="md:py-5 py-3">
+            <div className="max-w-screen-2xl mx-auto md:py-12 py-0 md:pb-1 text-gray-50 grid md:grid-cols-3 md:gap-x-20">
                 <div className="relative group overflow-hidden rounded-xl md:col-span-2 flex items-center md:pr-10 p-5 md:p-0">
                     <div className="relative flex-none w-full text-gray-700 z-10 ">
                         <div className="group relative h-[200px] overflow-hidden rounded-xl border border-gray-400 md:h-[450px] md:p-5 p-2">
@@ -70,7 +70,7 @@ function ArticlesMainList({ articles = [] }) {
                         </div>
                     </div>
                 </div>
-                <div className="w-full block md:hidden border-b my-5"></div>
+                <div className="w-full block md:hidden border-b md:my-5 my-2"></div>
                 <div>
                     <ArticlesList latest={latest}></ArticlesList>
                 </div>

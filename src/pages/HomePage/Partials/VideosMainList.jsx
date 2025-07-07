@@ -29,7 +29,7 @@ function VideosMainList({ videos = [] }) {
 
   return (
     <section className="flex justify-center bg-white">
-      <div className="grid-col-1 grid w-full max-w-screen-2xl gap-x-8 px-6 py-8 md:grid-cols-2 md:gap-x-16 md:px-0 md:py-10">
+      <div className="grid-col-1 grid w-full max-w-screen-2xl gap-x-8 px-6 py-4 md:grid-cols-2 md:gap-x-16 md:px-0 md:py-10">
         <div className="">
           <h2 className="text-md montserrat-bold mb-4 flex rounded-full py-1 font-bold text-gray-700 md:text-xl">
             <MdBiotech className="text-xl md:text-2xl" />

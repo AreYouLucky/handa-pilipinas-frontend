@@ -34,10 +34,10 @@ function Video() {
   return (
     <DashboardLayout>
       <div className="w-full">
-        <div className="m-auto w-full max-w-screen-2xl py-12 px-5">
+        <div className="m-auto w-full max-w-screen-2xl md:py-12 py-6 px-5">
           <div className="w-full aspect-video">
             <iframe
-              className="w-full h-full border-0"
+              className="w-full h-full border-1 border-gray-500 rounded-lg"
               src={video.youtube_url}
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -63,7 +63,7 @@ function Video() {
           </div>
 
           <div className="w-full">
-            <h2 className="text-md montserrat-bold mt-10 mb-4 flex rounded-full py-1 font-bold text-gray-700 md:mt-0 md:text-lg">
+            <h2 className="text-md montserrat-bold mt-5 mb-4 flex rounded-full py-1 font-bold text-gray-700 md:mt-0 md:text-lg">
               <MdOutlineFeaturedPlayList className="mr-2 text-xl md:text-2xl" />
               RECENT VIDEOS
             </h2>

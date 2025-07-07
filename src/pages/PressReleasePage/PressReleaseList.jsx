@@ -29,7 +29,7 @@ function PressReleaseList() {
         <DashboardLayout>
             <div className="w-full">
                 <div className="m-auto w-full max-w-screen-2xl py-5 md:py-8 px-5">
-                    <h1 className='text-center montserrat-bold p-5 border rounded-lg'>
+                    <h1 className='text-center montserrat-bold p-5 border rounded-lg hidden md:block'>
                         PRESS RELEASES
                     </h1>
                     <div className='w-full grid md:grid-cols-3 grid-cols-1 md:gap-8'>
@@ -107,12 +107,12 @@ function PressReleaseList() {
                             }
                         </div>
                     </div>
-                    <div className='border my-8 border-gray-300'>
+                    <div className='border my-8 border-gray-300 hidden md:block'>
 
                     </div>
 
                     <div className='w-full'>
-                        <h2 className="text-md montserrat-bold mt-10 mb-4 flex rounded-full py-1 font-bold text-gray-700 md:mt-0 md:text-lg">
+                        <h2 className="text-md montserrat-bold mt-5 mb-4 flex rounded-full py-1 font-bold text-gray-700 md:mt-0 md:text-lg">
                             <GrArticle className="mr-2 text-xl md:text-2xl" />
                             OTHER ARTICLES
                         </h2>

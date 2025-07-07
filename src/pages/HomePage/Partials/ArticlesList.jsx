@@ -7,7 +7,7 @@ import { formatDateShort } from "../../../hooks/dateFormatter";
 
 function ArticlesList({ latest = [] }) {
   return (
-    <section className="space-y-1 px-8 py-4 text-gray-800 md:px-2 md:pb-5">
+    <section className="space-y-1 px-8 md:py-4 py-0 text-gray-800 md:px-2 md:pb-5">
       <div className="w-full border-b border-gray-400 pb-3">
         <h4 className="montserrat-bold flex items-center gap-x-2 text-lg font-extrabold">
           <IoNewspaperOutline className="text-2xl" />

@@ -28,12 +28,12 @@ function VideoList() {
         <DashboardLayout>
             <div className="w-full">
                 <div className="m-auto w-full max-w-screen-2xl py-5 md:py-8 px-5">
-                <h1 className='text-center montserrat-bold p-5 border rounded-lg'>
+                <h1 className='text-center montserrat-bold p-5 border rounded-lg hidden md:block'>
                     VIDEOS
                 </h1>
                     <div className='w-full grid md:grid-cols-3 grid-cols-1 md:gap-8'>
                         <div className='w-full md:col-span-2'>
-                            <h2 className="text-md montserrat-bold mb-4 flex rounded-full py-1 font-bold text-gray-700 md:text-xl">
+                            <h2 className="text-md montserrat-bold mb-4 flex rounded-full font-bold text-gray-700 md:text-xl">
                                 <MdBiotech className="text-xl md:text-2xl" />
                                 HIGHLIGHT VIDEO
                             </h2>
@@ -77,7 +77,7 @@ function VideoList() {
                             </article>
                         </div>
                         <div className='w-full'>
-                            <h2 className="text-md montserrat-bold mt-10 mb-4 flex rounded-full py-1 font-bold text-gray-700 md:mt-0 md:text-lg">
+                            <h2 className="text-md montserrat-bold mt-5 mb-4 flex rounded-full py-1 font-bold text-gray-700 md:mt-0 md:text-lg">
                                 <MdOutlineFeaturedPlayList className="mr-2 text-xl md:text-2xl" />
                                 LATEST VIDEOS
                             </h2>
@@ -109,12 +109,12 @@ function VideoList() {
                             }
                         </div>
                     </div>
-                    <div className='border my-8 border-gray-300'>
+                    <div className='border md:my-8 my-2 border-gray-300'>
 
                     </div>
 
                     <div className='w-full'>
-                        <h2 className="text-md montserrat-bold mt-10 mb-4 flex rounded-full py-1 font-bold text-gray-700 md:mt-0 md:text-lg">
+                        <h2 className="text-md montserrat-bold mt-5 mb-4 flex rounded-full py-1 font-bold text-gray-700 md:mt-0 md:text-lg">
                             <LiaPhotoVideoSolid className="mr-2 text-xl md:text-2xl" />
                             OTHER VIDEOS
                         </h2>

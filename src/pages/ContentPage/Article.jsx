@@ -17,7 +17,6 @@ function Article() {
 
   useEffect(() => {
     if (!slug) return;
-
     const other = [];
     const normalizedTitle = title.toLowerCase();
     data.forEach(item => {
@@ -28,7 +27,7 @@ function Article() {
       }
     });
     setOthersArticles(other);
-  }, [slug]);
+  }, [slug, title]);
 
   const purifyText = (text) => {
     return DOMPurify.sanitize(text);
@@ -37,11 +36,11 @@ function Article() {
   return (
     <DashboardLayout>
       <div className="w-full">
-        <div className="m-auto w-full max-w-screen-2xl py-12 px-8 grid md:grid-cols-3 grid-cols-1 gap-x-10">
+        <div className="m-auto w-full max-w-screen-2xl md:py-12 py-6 px-8 grid md:grid-cols-3 grid-cols-1 gap-x-10">
           <div className='w-full md:col-span-2 text-justify'>
             <div dangerouslySetInnerHTML={{ __html: purifyText(article.content || "") }} />
           </div>
-          <div className='w-full md:mt-0 mt-10'>
+          <div className='w-full md:mt-0 mt-8'>
             <section className="space-y-1 px-2 text-gray-800 md:pb-5">
               <div className="w-full border-b border-gray-400 pb-3">
                 <h4 className="montserrat-bold flex items-center gap-x-2 text-lg font-extrabold">
