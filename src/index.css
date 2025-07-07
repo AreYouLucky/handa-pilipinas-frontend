@@ -4,6 +4,9 @@
   --swiper-navigation-color: #ffffff; /* white */
   --swiper-pagination-color: #ffffff; /* red */
 }
+Link{
+  cursor: pointer;
+}
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -38,6 +41,9 @@
   src: url("./assets/fonts/Montserrat-Bold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+}
+.sans{
+  font-family: sa;
 }
 .acklin-font {
   font-family: "Acklin", sans-serif;

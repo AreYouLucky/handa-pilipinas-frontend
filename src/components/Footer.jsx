@@ -15,21 +15,21 @@ function Footer() {
               <li>
                 <a
                   href="#"
-                  className="flex items-center gap-3 text-lg duration-150 hover:text-gray-50"
+                  className="flex items-center gap-3 text-lg duration-150 hover:text-gray-50 hover:scale-103"
                 >
                   <FaFacebookSquare className="rounded-md bg-white text-2xl text-blue-800" />{" "}
                   <span>HANDA PILIPINAS</span>
                 </a>
               </li>
             </ul>
-            <ul className="mt-5 mb-5 text-gray-100 md:mt-10">
+            <ul className="mt-5 mb-5 text-gray-300 md:mt-10">
               <h3 className="text-2xl font-semibold text-gray-50 sm:pb-2">
                 Contact Us
               </h3>
               <li>
                 <a
                   href="#"
-                  className="flex items-center gap-4 text-lg duration-150 hover:text-gray-50"
+                  className="flex items-center gap-4 text-lg duration-150 hover:text-gray-50 hover:scale-103"
                 >
                   <FaPhone className="rounded-md text-xl text-white" />{" "}
                   <span>0000-0000-000</span>
@@ -38,7 +38,7 @@ function Footer() {
               <li>
                 <a
                   href="#"
-                  className="flex items-center gap-4 text-lg duration-150 hover:text-gray-50"
+                  className="flex items-center gap-4 text-lg duration-150 hover:text-gray-50 hover:scale-103"
                 >
                   <IoMdMail className="rounded-md text-xl text-white" />{" "}
                   <span>email@email.com</span>
@@ -47,14 +47,14 @@ function Footer() {
             </ul>
           </div>
           <div className="w-full">
-            <ul className="text-gray-100">
+            <ul className="text-gray-300">
               <h3 className="text-2xl font-semibold text-gray-50 sm:pb-2">
                 Categories
               </h3>
               <li>
                 <a
                   href="#"
-                  className="flex items-center gap-4 text-lg duration-150 hover:text-gray-50"
+                  className="flex items-center gap-4 text-lg duration-150 hover:text-gray-50 hover:scale-103"
                 >
                   #ScienceJournoAko
                 </a>
@@ -62,7 +62,7 @@ function Footer() {
               <li>
                 <a
                   href="#"
-                  className="flex items-center gap-4 text-lg duration-150 hover:text-gray-50"
+                  className="flex items-center gap-4 text-lg duration-150 hover:text-gray-50 hover:scale-103"
                 >
                   Agriculture
                 </a>
@@ -70,7 +70,7 @@ function Footer() {
               <li>
                 <a
                   href="#"
-                  className="flex items-center gap-4 text-lg duration-150 hover:text-gray-50"
+                  className="flex items-center gap-4 text-lg duration-150 hover:text-gray-50 hover:scale-103"
                 >
                   CEST
                 </a>
@@ -78,7 +78,7 @@ function Footer() {
               <li>
                 <a
                   href="#"
-                  className="flex items-center gap-4 text-lg duration-150 hover:text-gray-50"
+                  className="flex items-center gap-4 text-lg duration-150 hover:text-gray-50 hover:scale-103"
                 >
                   Disaster Resilience
                 </a>
@@ -86,7 +86,7 @@ function Footer() {
               <li>
                 <a
                   href="#"
-                  className="flex items-center gap-4 text-lg duration-150 hover:text-gray-50"
+                  className="flex items-center gap-4 text-lg duration-150 hover:text-gray-50 hover:scale-103"
                 >
                   Education
                 </a>
@@ -94,7 +94,7 @@ function Footer() {
               <li>
                 <a
                   href="#"
-                  className="flex items-center gap-4 text-lg duration-150 hover:text-gray-50"
+                  className="flex items-center gap-4 text-lg duration-150 hover:text-gray-50 hover:scale-103"
                 >
                   Environment
                 </a>
@@ -102,7 +102,7 @@ function Footer() {
               <li>
                 <a
                   href="#"
-                  className="flex items-center gap-4 text-lg duration-150 hover:text-gray-50"
+                  className="flex items-center gap-4 text-lg duration-150 hover:text-gray-50 hover:scale-103"
                 >
                   Gender and Development
                 </a>
@@ -110,7 +110,7 @@ function Footer() {
               <li>
                 <a
                   href="#"
-                  className="flex items-center gap-4 text-lg duration-150 hover:text-gray-50"
+                  className="flex items-center gap-4 text-lg duration-150 hover:text-gray-50 hover:scale-103"
                 >
                   Handa Pilipinas
                 </a>
@@ -118,11 +118,11 @@ function Footer() {
             </ul>
           </div>
           <div className="w-full">
-            <ul className="text-gray-100">
+            <ul className="text-gray-300">
               <li>
                 <a
                   href="#"
-                  className="flex items-center gap-4 text-lg duration-150 hover:text-gray-50 md:mt-7"
+                  className="flex items-center gap-4 text-lg duration-150 hover:text-gray-50 hover:scale-103 md:mt-7"
                 >
                   Health and Nutrition
                 </a>
@@ -130,7 +130,7 @@ function Footer() {
               <li>
                 <a
                   href="#"
-                  className="flex items-center gap-4 text-lg duration-150 hover:text-gray-50"
+                  className="flex items-center gap-4 text-lg duration-150 hover:text-gray-50 hover:scale-103"
                 >
                   NSTW
                 </a>
@@ -138,7 +138,7 @@ function Footer() {
               <li>
                 <a
                   href="#"
-                  className="flex items-center gap-4 text-lg duration-150 hover:text-gray-50"
+                  className="flex items-center gap-4 text-lg duration-150 hover:text-gray-50 hover:scale-103"
                 >
                   NYSTIF
                 </a>
@@ -146,7 +146,7 @@ function Footer() {
               <li>
                 <a
                   href="#"
-                  className="flex items-center gap-4 text-lg duration-150 hover:text-gray-50"
+                  className="flex items-center gap-4 text-lg duration-150 hover:text-gray-50 hover:scale-103"
                 >
                   RSTW
                 </a>
@@ -154,7 +154,7 @@ function Footer() {
               <li>
                 <a
                   href="#"
-                  className="flex items-center gap-4 text-lg duration-150 hover:text-gray-50"
+                  className="flex items-center gap-4 text-lg duration-150 hover:text-gray-50 hover:scale-103"
                 >
                   Science Enterpreneurship in Technology
                 </a>
@@ -162,7 +162,7 @@ function Footer() {
               <li>
                 <a
                   href="#"
-                  className="flex items-center gap-4 text-lg duration-150 hover:text-gray-50"
+                  className="flex items-center gap-4 text-lg duration-150 hover:text-gray-50 hover:scale-103"
                 >
                   Setup & Livelihood
                 </a>
@@ -170,7 +170,7 @@ function Footer() {
               <li>
                 <a
                   href="#"
-                  className="flex items-center gap-4 text-lg duration-150 hover:text-gray-50"
+                  className="flex items-center gap-4 text-lg duration-150 hover:text-gray-50 hover:scale-103"
                 >
                   Special Feature
                 </a>
@@ -178,7 +178,7 @@ function Footer() {
               <li>
                 <a
                   href="#"
-                  className="flex items-center gap-4 text-lg duration-150 hover:text-gray-50"
+                  className="flex items-center gap-4 text-lg duration-150 hover:text-gray-50 hover:scale-103"
                 >
                   Technology and Innovation
                 </a>

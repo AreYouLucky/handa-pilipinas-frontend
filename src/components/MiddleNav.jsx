@@ -1,11 +1,13 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 function MiddleNav() {
   const [isMegaMenuOpen, setMegaMenuOpen] = useState(false);
+  const location = useLocation();
+  const url = location.pathname;
 
   const navigation_text =
-    " block py-4 px-3 border-b md:border-0 md:p-0 text-white hover:bg-gray-700 hover:text-gray-100 hover:scale-105 duration-300 md:hover:bg-transparent border-gray-700 montserrat-bold text-xl ";
+    " block py-4 px-3 border-b md:border-0 md:p-0  hover:bg-gray-700 hover:text-gray-100 hover:scale-105 duration-300 md:hover:bg-transparent border-gray-700 montserrat-bold text-xl ";
 
   const toggleMegaMenu = () => {
     setMegaMenuOpen(!isMegaMenuOpen);
@@ -14,6 +16,7 @@ function MiddleNav() {
   const closeMegaMenu = () => {
     setMegaMenuOpen(false);
   };
+  const hightlight = " text-yellow-300";
 
   return (
     <section className="relative z-[9999] hidden w-full justify-center border-y border-gray-100 bg-[#ED1E24] md:flex">
@@ -28,9 +31,8 @@ function MiddleNav() {
               >
                 <span className={navigation_text}>MEDIA</span>
                 <svg
-                  className={`h-3 w-3 transform duration-300 ${
-                    isMegaMenuOpen ? "rotate-180" : ""
-                  }`}
+                  className={`h-3 w-3 transform duration-300 ${isMegaMenuOpen ? "rotate-180" : ""
+                    }`}
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 10 6"
@@ -45,22 +47,22 @@ function MiddleNav() {
                 </svg>
               </button>
             </div>
-            <div>
-              <a href="#" className={navigation_text}>
+            <div className={url == '/activities' ? hightlight : ' '}>
+              <Link to="/activities" className={navigation_text}>
                 GENERAL PROGRAM OF ACTIVITIES
-              </a>
+              </Link>
             </div>
-            <div>
-              <a href="#" className={navigation_text}>
+            <div className={url == '/technologies' ? hightlight : ' '}>
+              <Link to="/technologies" className={navigation_text}>
                 FEATURED TECHNOLOGIES
-              </a>
+              </Link>
             </div>
-            <div>
-              <a href="#" className={navigation_text}>
+            <div className={url == '/videos' ? hightlight : ' '}>
+              <Link to="/videos" className={navigation_text}>
                 VIDEOS
-              </a>
+              </Link>
             </div>
-            <div>
+            <div className={url == '/about' ? hightlight : ' '}>
               <Link to="/about" className={navigation_text}>
                 ABOUT
               </Link>
@@ -69,15 +71,14 @@ function MiddleNav() {
         </nav>
 
         {isMegaMenuOpen && (
-          <div onClick={closeMegaMenu} className="fixed inset-0 z-50"></div>
+          <div onClick={closeMegaMenu} className="fixed inset-0 z-40"></div>
         )}
 
         <div
-          className={`absolute top-full left-0 z-auto w-full transform transition-all duration-300 ease-in-out ${
-            isMegaMenuOpen
-              ? "pointer-events-auto translate-y-0 opacity-100"
-              : "pointer-events-none -translate-y-2 opacity-0"
-          }`}
+          className={`absolute top-full left-0 z-50 w-full transform transition-all duration-300 ease-in-out ${isMegaMenuOpen
+            ? "pointer-events-auto translate-y-0 opacity-100"
+            : "pointer-events-none -translate-y-2 opacity-0"
+            }`}
         >
           <div className="z-50 rounded-b-lg bg-[#ed1e25ef] shadow-lg">
             <div className="mx-auto grid w-full grid-cols-1 gap-4 px-10 py-5 text-white sm:grid-cols-2 md:grid-cols-3">
@@ -100,6 +101,7 @@ function MiddleNav() {
                       />
                     </svg>
                   ),
+                  src: "/press-release"
                 },
                 {
                   title: "SPEECHES",
@@ -119,6 +121,7 @@ function MiddleNav() {
                       />
                     </svg>
                   ),
+                  src: "/speeches"
                 },
                 {
                   title: "ARCHIVES",
@@ -138,23 +141,27 @@ function MiddleNav() {
                       />
                     </svg>
                   ),
+                  src: "/archives"
                 },
-              ].map((item) => (
-                <div
-                  key={item.title}
-                  className="rounded-xl border p-4 duration-300 hover:scale-105 hover:border-white hover:bg-gray-800"
-                >
-                  <a
-                    href="#"
-                    className="block rounded-lg p-3 hover:bg-gray-700"
+              ].map((item, i) => (
+                <Link to={item.src} key={i} >
+                  <div
+                    key={item.title}
+                    className={`rounded-xl border p-4 duration-300 hover:scale-105 hover:border-white hover:bg-gray-800 ${url === item.src ? 'bg-gray-700' : ''
+                      }`}
                   >
-                    <div className="flex items-center gap-3">
-                      {item.icon}
-                      <span className="font-semibold">{item.title}</span>
-                    </div>
-                    <p className="mt-2 text-sm text-gray-200">{item.desc}</p>
-                  </a>
-                </div>
+                    <span
+                      href="#"
+                      className="block rounded-lg p-3"
+                    >
+                      <div className="flex items-center gap-3">
+                        {item.icon}
+                        <span className="font-semibold">{item.title}</span>
+                      </div>
+                      <p className="mt-2 text-sm text-gray-200">{item.desc}</p>
+                    </span>
+                  </div>
+                </Link>
               ))}
             </div>
           </div>

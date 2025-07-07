@@ -14,12 +14,12 @@ function Home() {
   }, []);
 
   const filterVideos = () => {
-    const filtered = data.filter(item => item.file_type === 2).slice(0, 5);;
+    const filtered = data.filter(item => item.file_type === 2);
     setVideos(filtered);
   };
 
   const filterArticles = () => {
-    const filtered = data.filter(item => item.file_type === 1).slice(0, 5);;
+    const filtered = data.filter(item => item.file_type === 1);
     setArticles(filtered);
   };
 

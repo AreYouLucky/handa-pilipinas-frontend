@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { MdArrowDropDown } from "react-icons/md";
 import { RxHamburgerMenu } from "react-icons/rx";
-
+import SearchBox from "./SearchBox";
 function Navbar() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -20,6 +20,10 @@ function Navbar() {
             alt="Logo"
           />
         </Link>
+        <div className="hidden md:block">
+          <SearchBox />
+        </div>
+
 
         {/* Hamburger button */}
         <button
@@ -35,6 +39,9 @@ function Navbar() {
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
           <div className="mt-2 w-full border-y border-gray-200 py-5">
+            <div className="py-2 mb-4">
+              <SearchBox />
+            </div>
             <ul className="space-y-2 text-sm">
               <li>
                 <button
@@ -56,7 +63,7 @@ function Navbar() {
                   <ul className="animate-slideInRight space-y-2 py-2">
                     <li>
                       <Link
-                        to="/dc/initial-review-list"
+                        to="/press-release"
                         className="group flex w-full items-center rounded-lg p-2 pl-11 duration-300 hover:scale-105"
                       >
                         <span className={navigation_text}>PRESS RELEASE</span>
@@ -64,7 +71,7 @@ function Navbar() {
                     </li>
                     <li>
                       <Link
-                        to="/qmr/document-list"
+                        to="/speeches"
                         className="group flex w-full items-center rounded-lg p-2 pl-11 duration-300 hover:scale-105"
                       >
                         <span className={navigation_text}>SPEECHES</span>
@@ -72,7 +79,7 @@ function Navbar() {
                     </li>
                     <li>
                       <Link
-                        to="/qmr/document-list"
+                        to="/archives"
                         className="group flex w-full items-center rounded-lg p-2 pl-11 duration-300 hover:scale-105"
                       >
                         <span className={navigation_text}>ARCHIVES</span>
@@ -83,7 +90,7 @@ function Navbar() {
               </li>
               <li>
                 <Link
-                  to="/dashboard"
+                  to="/activities"
                   className={`group flex items-center rounded-lg p-2 duration-300 hover:scale-105`}
                 >
                   <span
@@ -95,7 +102,7 @@ function Navbar() {
               </li>
               <li>
                 <Link
-                  to="/dashboard"
+                  to="/technologies"
                   className={`group flex items-center rounded-lg p-2 duration-300 hover:scale-105`}
                 >
                   <span
@@ -107,7 +114,7 @@ function Navbar() {
               </li>
               <li>
                 <Link
-                  to="/dashboard"
+                  to="/videos"
                   className={`group flex items-center rounded-lg p-2 duration-300 hover:scale-105`}
                 >
                   <span
@@ -119,7 +126,7 @@ function Navbar() {
               </li>
               <li>
                 <Link
-                  to="/dashboard"
+                  to="/about"
                   className={`group flex items-center rounded-lg p-2 duration-300 hover:scale-105`}
                 >
                   <span

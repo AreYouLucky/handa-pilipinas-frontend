@@ -1,5 +1,6 @@
 import { MdOutlineReadMore } from "react-icons/md";
-import {formatDateShort} from "../../../hooks/dateFormatter"
+import { formatDateShort } from "../../../hooks/dateFormatter"
+import { Link } from "react-router-dom";
 
 function VideosMiniList({ latest = [] }) {
 
@@ -8,6 +9,7 @@ function VideosMiniList({ latest = [] }) {
       <div className="grid grid-cols-2 gap-4 md:gap-4 montserrat-regular">
         {
           latest.slice(0, 4).map((item, i) => (
+            
             <article className="w-full md:px-2" key={i}>
               <div className="relative h-[100px] w-full flex-shrink-0 overflow-hidden rounded-md border border-gray-400 shadow-lg md:h-[150px]">
                 <img
@@ -24,7 +26,7 @@ function VideosMiniList({ latest = [] }) {
               <h2 className="montserrat-bold mt-2 flex rounded-full text-xs font-bold text-gray-900 md:px-2 md:text-sm">
                 {item.title}
               </h2>
-              <p className="text-sm text-gray-700 md:px-2 md:text-justify">
+              <p className="md:text-sm text-xs text-gray-700 md:px-2 md:text-justify">
                 {item.excerpt}
               </p>
             </article>
@@ -32,11 +34,13 @@ function VideosMiniList({ latest = [] }) {
         }
 
       </div>
-      <div className="mt-4 flex w-full justify-center">
-        <span className="montserrat-regular flex cursor-pointer items-center justify-center gap-x-2 rounded-full border px-3 py-1 text-sm font-medium text-gray-700 duration-150 hover:bg-black hover:text-white md:inline-flex">
-          View More <MdOutlineReadMore className="text-2xl" />
-        </span>
-      </div>
+      <Link to={'/videos'}>
+        <div className="mt-4 flex w-full justify-center">
+          <span className="montserrat-regular flex cursor-pointer items-center justify-center gap-x-2 rounded-full border px-3 py-1 text-sm font-medium text-gray-700 duration-150 hover:bg-black hover:text-white md:inline-flex">
+            View More <MdOutlineReadMore className="text-2xl" />
+          </span>
+        </div>
+      </Link>
     </section>
   );
 }

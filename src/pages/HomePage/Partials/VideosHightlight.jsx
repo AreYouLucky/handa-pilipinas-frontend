@@ -21,17 +21,17 @@ function VideosHightlight({hightlight}) {
             </svg>
           </button>
         </div>
-        <div className="relative z-20 flex h-[300px]  flex-col justify-between p-4 text-white md:h-[540px] md:p-6">
+        <div className="relative z-20 flex h-[300px]  flex-col justify-between p-2 text-white md:h-[540px] md:p-6">
           <div className="w-fit items-center gap-x-2 rounded-full border border-gray-50 p-1 text-sm font-medium duration-150">
             <span className="inline-block rounded-full bg-[#FFCC49] px-3 py-1 font-bold text-gray-900 montserrat-bold">
               {formatDateLong(hightlight.date_published)}
             </span>
           </div>
           <div className="w-full p-5 bg-gray-900/60 rounded-lg">
-            <p className="montserrat-bold space-y-[-10px] text-xl leading-tight text-gray-50 md:text-2xl">
+            <p className="montserrat-bold space-y-[-10px] text-sm leading-tight text-gray-50 md:text-2xl">
               {hightlight.title}
             </p>
-            <p className="montserrat-regular mb-4 text-justify text-sm text-gray-300">
+            <p className="montserrat-regular mb-4 text-justify md:text-sm text-xs text-gray-300">
               {hightlight.excerpt}
             </p>
           </div>
