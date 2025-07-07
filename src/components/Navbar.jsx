@@ -1,12 +1,13 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { MdArrowDropDown } from "react-icons/md";
 import { RxHamburgerMenu } from "react-icons/rx";
 import SearchBox from "./SearchBox";
 function Navbar() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
+  const location = useLocation();
+  const url = location.pathname;
   const navigation_text =
     "block text-gray-800 hover:bg-gray-700 hover:text-gray-100 hover:scale-105 duration-300 md:hover:bg-transparent border-gray-700 montserrat-bold text-lg";
 
@@ -61,15 +62,15 @@ function Navbar() {
 
                 {isDropdownOpen && (
                   <ul className="animate-slideInRight space-y-2 py-2">
-                    <li>
+                    <li className={url == '/press-release' ? 'bg-gray-200 rounded-full' : ' '}>
                       <Link
                         to="/press-release"
-                        className="group flex w-full items-center rounded-lg p-2 pl-11 duration-300 hover:scale-105"
+                        className="group flex w-full items-center rounded-lg p-2 pl-11 duration-300 hover:scale-105 "
                       >
                         <span className={navigation_text}>PRESS RELEASE</span>
                       </Link>
                     </li>
-                    <li>
+                    <li className={url == '/speeches' ? 'bg-gray-200 rounded-full' : ' '}>
                       <Link
                         to="/speeches"
                         className="group flex w-full items-center rounded-lg p-2 pl-11 duration-300 hover:scale-105"
@@ -77,7 +78,7 @@ function Navbar() {
                         <span className={navigation_text}>SPEECHES</span>
                       </Link>
                     </li>
-                    <li>
+                    <li className={url == '/archives' ? 'bg-gray-200 rounded-full' : ' '}>
                       <Link
                         to="/archives"
                         className="group flex w-full items-center rounded-lg p-2 pl-11 duration-300 hover:scale-105"
@@ -88,7 +89,7 @@ function Navbar() {
                   </ul>
                 )}
               </li>
-              <li>
+              <li className={url == '/activities' ? 'bg-gray-200 rounded-full' : ' '}>
                 <Link
                   to="/activities"
                   className={`group flex items-center rounded-lg p-2 duration-300 hover:scale-105`}
@@ -100,7 +101,7 @@ function Navbar() {
                   </span>
                 </Link>
               </li>
-              <li>
+              <li className={url == '/technologies' ? 'bg-gray-200 rounded-full' : ' '}>
                 <Link
                   to="/technologies"
                   className={`group flex items-center rounded-lg p-2 duration-300 hover:scale-105`}
@@ -112,7 +113,7 @@ function Navbar() {
                   </span>
                 </Link>
               </li>
-              <li>
+              <li className={url == '/videos' ? 'bg-gray-200 rounded-full' : ' '}>
                 <Link
                   to="/videos"
                   className={`group flex items-center rounded-lg p-2 duration-300 hover:scale-105`}
@@ -124,7 +125,7 @@ function Navbar() {
                   </span>
                 </Link>
               </li>
-              <li>
+              <li className={url == '/about' ? 'bg-gray-200 rounded-full' : ' '}>
                 <Link
                   to="/about"
                   className={`group flex items-center rounded-lg p-2 duration-300 hover:scale-105`}

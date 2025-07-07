@@ -4,7 +4,7 @@ function About() {
     return (
         <DashboardLayout>
             <div className="mx-auto max-w-screen-2xl py-4 text-justify text-gray-700 md:py-12 px-6 md:px-0">
-                <div className="mx-auto max-w-screen-lg py-5">
+                <div className="mx-auto max-w-screen-lg md:py-5 py-2">
                     <video width="100%" height="100%" controls autoPlay>
                         <source src="/videos/teaser.mp4" type="video/mp4" />
                     </video>
