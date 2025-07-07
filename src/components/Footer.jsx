@@ -6,7 +6,7 @@ function Footer() {
   return (
     <footer className="montserrat bg-[#ED1E24] pt-4">
       <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-3 md:space-y-6">
+        <div className="md:mt-16 mt-6 grid grid-cols-1 md:grid-cols-3 md:space-y-6">
           <div className="w-full">
             <ul className="text-gray-100">
               <h3 className="text-2xl font-bold text-gray-50 sm:pb-2">
