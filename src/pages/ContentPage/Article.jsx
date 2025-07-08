@@ -9,7 +9,7 @@ import { MdOutlineReadMore } from "react-icons/md";
 import { slugText } from "../../hooks/textSlug";
 import { formatDateShort } from "../../hooks/dateFormatter";
 import Framer from '../../components/Framer';
-
+import ShareLink from '../../components/ShareLink';
 function Article() {
   const { slug } = useParams();
   const title = decodeURIComponent(slug || "").replace(/-/g, " ");
@@ -42,6 +42,7 @@ function Article() {
             <Framer animation="fade-up">
               <div dangerouslySetInnerHTML={{ __html: purifyText(article.content || "") }} />
             </Framer>
+            <ShareLink/>
           </div>
           <div className='w-full md:mt-0 mt-8'>
             <Framer animation="zoom-in">
