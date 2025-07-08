@@ -3,6 +3,7 @@ import ArticlesMainList from "./Partials/ArticlesMainList";
 import VideosMainList from "./Partials/VideosMainList";
 import { useState, useEffect } from "react";
 import { data } from "../Data/data";
+import Framer from "../../components/Framer";
 
 function Home() {
   const [articles, setArticles] = useState([]);
@@ -26,9 +27,13 @@ function Home() {
   return (
     <DashboardLayout>
       <div className="w-full">
-        <ArticlesMainList articles={articles} />
+        <Framer animation="fade-right">
+          <ArticlesMainList articles={articles} />
+        </Framer>
         <div className="m-auto w-full max-w-screen-2xl border-b border-gray-400"></div>
-        <VideosMainList videos={videos} />
+        <Framer animation="fade-left">
+          <VideosMainList videos={videos} />
+        </Framer>
       </div>
     </DashboardLayout>
   );

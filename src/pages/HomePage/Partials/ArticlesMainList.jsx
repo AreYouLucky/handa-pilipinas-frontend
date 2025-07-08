@@ -2,6 +2,7 @@ import ArticlesList from "./ArticlesList"
 import { useEffect, useState } from "react";
 import { formatDateLong } from "../../../hooks/dateFormatter"
 import { slugText } from "../../../hooks/textSlug"
+import Framer from "../../../components/Framer";
 
 import { Link } from "react-router-dom";
 
@@ -72,7 +73,9 @@ function ArticlesMainList({ articles = [] }) {
                 </div>
                 <div className="w-full block md:hidden border-b md:my-5 my-2"></div>
                 <div>
-                    <ArticlesList latest={latest}></ArticlesList>
+                    <Framer animation="fade-up">
+                        <ArticlesList latest={latest}></ArticlesList>
+                    </Framer>
                 </div>
             </div>
         </section>

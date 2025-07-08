@@ -5,6 +5,7 @@ import { MdBiotech } from "react-icons/md";
 import { MdOutlineFeaturedPlayList } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { slugText } from "../../../hooks/textSlug"
+import Framer from "../../../components/Framer";
 
 
 function VideosMainList({ videos = [] }) {
@@ -39,13 +40,15 @@ function VideosMainList({ videos = [] }) {
             <VideosHightlight hightlight={highlight}></VideosHightlight>
           </Link>
         </div>
-        <div className="w-full">
-          <h2 className="text-md montserrat-bold mt-10 mb-4 flex rounded-full py-1 font-bold text-gray-700 md:mt-0 md:text-lg">
-            <MdOutlineFeaturedPlayList className="mr-2 text-xl md:text-2xl" />
-            LATEST VIDEOS
-          </h2>
-          <VideosMiniList latest={latest} />
-        </div>
+        <Framer animation="zoom-in">
+          <div className="w-full">
+            <h2 className="text-md montserrat-bold mt-10 mb-4 flex rounded-full py-1 font-bold text-gray-700 md:mt-0 md:text-lg">
+              <MdOutlineFeaturedPlayList className="mr-2 text-xl md:text-2xl" />
+              LATEST VIDEOS
+            </h2>
+            <VideosMiniList latest={latest} />
+          </div>
+        </Framer>
       </div>
     </section>
   );
