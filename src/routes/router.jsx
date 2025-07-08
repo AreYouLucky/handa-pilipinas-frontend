@@ -10,6 +10,7 @@ import Technologies from "../pages/Technologies/Technologies";
 import Activities from "../pages/Activities/Activities";
 import Speeches from "../pages/Speeches/Speeches";
 import Archives from "../pages/Achives/Archives";
+
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -25,7 +26,6 @@ export const router = createBrowserRouter([
       { path: "/activities", element: <Activities /> },
       { path: "/speeches", element: <Speeches /> },
       { path: "/archives", element: <Archives /> },
-
     ],
   },
 ]);

@@ -30,7 +30,7 @@ function Video() {
     });
 
     setOthersVideos(other);
-  }, [slug]);
+  }, [slug, title]);
   return (
     <DashboardLayout>
       <div className="w-full">
