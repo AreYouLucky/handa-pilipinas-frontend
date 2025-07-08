@@ -10,6 +10,8 @@ import { slugText } from "../../hooks/textSlug";
 import { formatDateShort } from "../../hooks/dateFormatter";
 import Framer from '../../components/Framer';
 import ShareLink from '../../components/ShareLink';
+import { Helmet } from 'react-helmet';
+
 function Article() {
   const { slug } = useParams();
   const title = decodeURIComponent(slug || "").replace(/-/g, " ");
@@ -36,13 +38,20 @@ function Article() {
 
   return (
     <DashboardLayout>
+      <Helmet>
+        <title>{article.title}</title>
+        <meta property="og:title" content={article.title} />
+        <meta property="og:description" content={article.excerpt} />
+        <meta property="og:image" content={`${window.location.origin}/images/articles/ ${article.title}`} />
+        <meta property="og:url" content={window.location.href} />
+      </Helmet>
       <div className="w-full">
         <div className="m-auto w-full max-w-screen-2xl md:py-12 py-6 px-8 grid md:grid-cols-3 grid-cols-1 gap-x-10">
           <div className='w-full md:col-span-2 text-justify'>
             <Framer animation="fade-up">
               <div dangerouslySetInnerHTML={{ __html: purifyText(article.content || "") }} />
             </Framer>
-            <ShareLink/>
+            <ShareLink />
           </div>
           <div className='w-full md:mt-0 mt-8'>
             <Framer animation="zoom-in">
