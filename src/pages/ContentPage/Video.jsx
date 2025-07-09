@@ -7,6 +7,7 @@ import DashboardLayout from "../../layouts/DashboardLayout";
 import { MdOutlineReadMore } from "react-icons/md";
 import { MdOutlineFeaturedPlayList } from "react-icons/md";
 import Framer from "../../components/Framer";
+import ShareLink from "../../components/ShareLink";
 
 
 function Video() {
@@ -57,6 +58,7 @@ function Video() {
               <p className="montserrat-regular mb-4 text-justify text-base text-gray-500">
                 {video.content}
               </p>
+              <ShareLink article={video}/>
             </div>
           </Framer>
 
