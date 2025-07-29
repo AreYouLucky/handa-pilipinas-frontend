@@ -1,5 +1,4 @@
 import React from 'react'
-import DashboardLayout from "../../layouts/DashboardLayout";
 import { useParams, Link } from "react-router-dom";
 import { data } from "../Data/data";
 import { useState, useEffect } from 'react';
@@ -36,7 +35,7 @@ function Article() {
   }
 
   return (
-    <DashboardLayout>
+    <>
       <div className="w-full">
         <div className="m-auto w-full max-w-screen-2xl md:py-12 py-6 px-8 grid md:grid-cols-3 grid-cols-1 gap-x-10">
           <div className='w-full md:col-span-2 text-justify'>
@@ -90,7 +89,7 @@ function Article() {
           </div>
         </div>
       </div>
-    </DashboardLayout>
+    </>
   )
 }
 

@@ -1,4 +1,3 @@
-import DashboardLayout from "../../layouts/DashboardLayout";
 import ArticlesMainList from "./Partials/ArticlesMainList";
 import VideosMainList from "./Partials/VideosMainList";
 import { useState, useEffect } from "react";
@@ -25,7 +24,7 @@ function Home() {
   };
 
   return (
-    <DashboardLayout>
+    <>
       <div className="w-full">
         <Framer animation="fade-right">
           <ArticlesMainList articles={articles} />
@@ -35,7 +34,7 @@ function Home() {
           <VideosMainList videos={videos} />
         </Framer>
       </div>
-    </DashboardLayout>
+    </>
   );
 }
 

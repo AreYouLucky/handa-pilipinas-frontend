@@ -10,6 +10,11 @@ import Technologies from "../pages/Technologies/Technologies";
 import Activities from "../pages/Activities/Activities";
 import Speeches from "../pages/Speeches/Speeches";
 import Archives from "../pages/Achives/Archives";
+import Photos from "../pages/PhotosPage/Photos";
+import Contacts from "../pages/Contacts/Contacts";
+import PoliciesAndLaws from "../pages/PoliciesLaws/PoliciesAndLaws";
+import LearningMaterials from "../pages/LearningMaterials/LearningMaterials";
+import DRRStats from "../pages/DRRStats/DRRStats";
 
 export const router = createBrowserRouter([
   {
@@ -26,6 +31,11 @@ export const router = createBrowserRouter([
       { path: "/activities", element: <Activities /> },
       { path: "/speeches", element: <Speeches /> },
       { path: "/archives", element: <Archives /> },
+      { path: "/photos", element: <Photos /> },
+      { path: "/contacts", element: <Contacts /> },
+      { path: "/policies-and-laws", element: <PoliciesAndLaws /> },
+      { path: "/learning-materials", element: <LearningMaterials /> },
+      { path: "/drr-stats", element: <DRRStats /> },
     ],
   },
 ]);

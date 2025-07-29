@@ -1,8 +1,7 @@
-import DashboardLayout from "../../layouts/DashboardLayout";
 import Framer from "../../components/Framer";
 function About() {
     return (
-        <DashboardLayout>
+        <>
             <div className="mx-auto max-w-screen-2xl py-4 text-justify text-gray-700 md:py-12 px-6 md:px-0">
                 <Framer animation="zoom-in">
                     <div className="mx-auto max-w-screen-lg md:py-5 py-2">
@@ -62,7 +61,7 @@ function About() {
                     </p>
                 </Framer>
             </div>
-        </DashboardLayout>
+        </>
     );
 }
 

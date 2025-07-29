@@ -24,7 +24,7 @@ const ShareLink = ({ article }) => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <span className='flex mt-3 bg-blue-500 w-fit px-3 py-2 rounded-md text-white montserrat-bold text-sm items-center'>
+        <span className='flex mt-3 bg-blue-500 w-fit px-3 py-2 rounded-md text-white montserrat-bold text-sm items-center hover:scale-105 duration-300'>
           <FaSquareFacebook className='text-2xl mr-2' />
           Share on Facebook
         </span>

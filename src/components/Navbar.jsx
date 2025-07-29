@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { MdArrowDropDown } from "react-icons/md";
 import { RxHamburgerMenu } from "react-icons/rx";
+import MiddleNav from "./MiddleNav";
+import MdNavigations from "./MdNavigations";
 import SearchBox from "./SearchBox";
 function Navbar() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -21,12 +23,10 @@ function Navbar() {
             alt="Logo"
           />
         </Link>
-        <div className="hidden md:block">
+        <div className="hidden md:flex gap-4">
           <SearchBox />
+          <MdNavigations/>
         </div>
-
-
-        {/* Hamburger button */}
         <button
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           type="button"
@@ -36,8 +36,7 @@ function Navbar() {
         >
           <RxHamburgerMenu className="text-3xl" />
         </button>
-
-        {/* Mobile Menu */}
+        
         {isMobileMenuOpen && (
           <div className="mt-2 w-full border-y border-gray-200 py-5">
             <div className="py-2 mb-4">

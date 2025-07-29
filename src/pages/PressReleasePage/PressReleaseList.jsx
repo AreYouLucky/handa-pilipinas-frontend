@@ -1,4 +1,3 @@
-import DashboardLayout from '../../layouts/DashboardLayout'
 import { data } from "../Data/data";
 import { useState, useEffect } from 'react';
 import { formatDateLong } from "../../hooks/dateFormatter"
@@ -26,7 +25,7 @@ function PressReleaseList() {
         setLatest(other);
     }, []);
     return (
-        <DashboardLayout>
+        <>
             <div className="w-full">
                 <div className="m-auto w-full max-w-screen-2xl py-5 md:py-8 px-5">
                     <h1 className='text-center montserrat-bold p-5 border rounded-lg hidden md:block'>
@@ -162,7 +161,7 @@ function PressReleaseList() {
 
                 </div>
             </div>
-        </DashboardLayout>
+        </>
     )
 }
 

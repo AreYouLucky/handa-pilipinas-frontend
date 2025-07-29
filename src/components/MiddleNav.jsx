@@ -7,7 +7,7 @@ function MiddleNav() {
   const url = location.pathname;
 
   const navigation_text =
-    " block py-4 px-3 border-b md:border-0 md:p-0  hover:bg-gray-700 hover:text-gray-100 hover:scale-105 duration-300 md:hover:bg-transparent border-gray-700 montserrat-bold text-xl ";
+    " block py-4 px-3 border-b md:border-0 md:p-0  hover:bg-gray-700 hover:text-gray-100 hover:scale-105 duration-300 md:hover:bg-transparent border-gray-700 montserrat-regular text-xl ";
 
   const toggleMegaMenu = () => {
     setMegaMenuOpen(!isMegaMenuOpen);
