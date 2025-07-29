@@ -3,6 +3,7 @@ import VideosMainList from "./Partials/VideosMainList";
 import { useState, useEffect } from "react";
 import { data } from "../Data/data";
 import Framer from "../../components/Framer";
+import Partners from "./Partials/Partners";
 
 function Home() {
   const [articles, setArticles] = useState([]);
@@ -32,6 +33,10 @@ function Home() {
         <div className="m-auto w-full max-w-screen-2xl border-b border-gray-400"></div>
         <Framer animation="fade-left">
           <VideosMainList videos={videos} />
+        </Framer>
+        <div className="m-auto w-full max-w-screen-2xl border-b border-gray-400"></div>
+        <Framer animation="fade-right">
+          <Partners />
         </Framer>
       </div>
     </>

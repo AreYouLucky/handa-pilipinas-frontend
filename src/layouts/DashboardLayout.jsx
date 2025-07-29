@@ -4,7 +4,7 @@ import MiddleNav from "../components/MiddleNav";
 import Footer from "../components/Footer";
 import Framer from "../components/Framer";
 import { Outlet } from "react-router-dom";
-function DashboardLayout() {
+function DashboardLayout({children}) {
   return (
     <>
       <div className="min-h-[100vh] w-full">
@@ -19,7 +19,7 @@ function DashboardLayout() {
           </Framer>
         </div>
         <div className="w-full">
-
+          {children}
         </div>
         <div className="w-full">
           <Framer animation="fade-up">

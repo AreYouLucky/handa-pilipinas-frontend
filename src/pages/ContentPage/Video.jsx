@@ -3,7 +3,6 @@ import { data } from "../Data/data";
 import { useState, useEffect } from 'react';
 import { slugText } from "../../hooks/textSlug";
 import { formatDateLong, formatDateShort } from "../../hooks/dateFormatter";
-import DashboardLayout from "../../layouts/DashboardLayout";
 import { MdOutlineReadMore } from "react-icons/md";
 import { MdOutlineFeaturedPlayList } from "react-icons/md";
 import Framer from "../../components/Framer";
@@ -33,7 +32,7 @@ function Video() {
     setOthersVideos(other);
   }, [slug, title]);
   return (
-    <DashboardLayout>
+    <>
       <div className="w-full">
         <div className="m-auto w-full max-w-screen-2xl md:py-12 py-6 px-5">
           <Framer animation="fade-up">
@@ -113,7 +112,7 @@ function Video() {
           </Framer>
         </div>
       </div>
-    </DashboardLayout>
+    </>
   )
 }
 

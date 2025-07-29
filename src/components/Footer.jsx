@@ -2,6 +2,12 @@ import React from "react";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa6";
 import { IoMdMail } from "react-icons/io";
+import { FaFacebook } from "react-icons/fa";
+import { FaInstagramSquare } from "react-icons/fa";
+import { AiFillTikTok } from "react-icons/ai";
+import { IoLogoYoutube } from "react-icons/io";
+
+
 function Footer() {
   return (
     <footer className="montserrat bg-[#ED1E24] pt-4">
@@ -188,9 +194,23 @@ function Footer() {
         </div>
         <div className="mt-10 flex flex-col items-center justify-between border-t border-gray-50 py-10">
           <img src="/images/logos/DOST.png" alt="" className="mb-2 h-24" />
-          <p className="text-center text-sm text-gray-50 md:text-lg">
-            Copyright © 2025 Handa Pilipinas - All rights reserved.
-          </p>
+          <div className=" items-center justify-between flex w-full">
+            <p className="text-gray-100">Copyright © 2025 Handa Pilipinas - All rights reserved.</p>
+            <div className="flex items-center gap-x-6 text-gray-400 mt-6">
+              <a href="/" target="_Blank">
+                <FaFacebook className="text-3xl text-blue-500 bg-gray-100 rounded-full hover:scale-125 duration-200" />
+              </a>
+              <a href="/" target="_Blank">
+                <FaInstagramSquare className="text-3xl text-pink-600 bg-gray-100 rounded-md hover:scale-125 duration-200" />
+              </a>
+              <a href="/" target="_Blank">
+                <AiFillTikTok className="text-3xl text-slate-600 bg-gray-100 rounded-md hover:scale-125 duration-200" />
+              </a>
+              <a href="/" target="_Blank">
+                <IoLogoYoutube className="text-3xl text-red-500 bg-gray-100 rounded-sm px-[3px] hover:scale-125 duration-200" />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
