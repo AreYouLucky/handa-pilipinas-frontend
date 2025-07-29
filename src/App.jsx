@@ -7,7 +7,7 @@ import { Outlet } from "react-router-dom";
 function DashboardLayout() {
   return (
     <>
-      <div className="min-h-[100vh] w-full">
+      <div className="min-h-[100vh] w-full max-w-screen overflow-hidden">
         <div className="w-full">
           <Framer animation="fade-in">
             <Navbar />
