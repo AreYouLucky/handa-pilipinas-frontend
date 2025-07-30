@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { MdArrowDropDown } from "react-icons/md";
 import { RxHamburgerMenu } from "react-icons/rx";
-import MiddleNav from "./MiddleNav";
 import MdNavigations from "./MdNavigations";
 import SearchBox from "./SearchBox";
 function Navbar() {
