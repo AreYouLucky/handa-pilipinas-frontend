@@ -1,4 +1,5 @@
 import { FaSquareFacebook } from "react-icons/fa6";
+import { Helmet } from "react-helmet-async";
 
 const ShareLink = ({ article }) => {
   const currentUrl = window.location.href;
@@ -7,6 +8,7 @@ const ShareLink = ({ article }) => {
 
   return (
     <>
+    <Helmet>
       <title>{article.title}</title>
       <meta property="og:type" content="article" />
       <meta property="og:title" content={article.title} />
@@ -18,6 +20,7 @@ const ShareLink = ({ article }) => {
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
       <meta property="og:url" content={currentUrl} />
+    </Helmet>
       <a
         href={shareUrl}
         target="_blank"
