@@ -58,7 +58,7 @@ function Home() {
               <ZoomInButton />
             </div>
           </div>
-          <div className="m-auto w-full max-w-screen-2xl max-h-[80vh] overflow-y-scroll  px-8 py-0 text-gray-800 md:px-2 my-5">
+          <div className="m-auto w-full max-w-screen-2xl max-h-[80vh] overflow-y-scroll  px-8 py-0 text-gray-800 md:px-2 mt-5 mb-10">
             <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js">
               <Viewer fileUrl="/pdf/RED_Book.pdf"
                 plugins={[zoomPluginInstance]}
@@ -66,7 +66,6 @@ function Home() {
             </Worker>
           </div>
         </Framer>
-        <div className="m-auto w-full max-w-screen-2xl border-b border-gray-400 mt-16 mb-5"></div>
         <Framer animation="fade-right">
           <Partners />
         </Framer>
