@@ -2,7 +2,7 @@ import { FaSquareFacebook } from "react-icons/fa6";
 
 const ShareLink = ({ article, slug }) => {
   const currentUrl = window.location.origin;
-  console.log(currentUrl)
+
   const previewUrl = new URL(currentUrl+'/api/og-preview');
   previewUrl.searchParams.append("title", article.title);
   previewUrl.searchParams.append("excerpt", article.excerpt);
@@ -10,6 +10,7 @@ const ShareLink = ({ article, slug }) => {
   previewUrl.searchParams.append("slug", slug);
 
   const shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(previewUrl.toString())}`;
+    console.log(shareUrl)
 
   return (
     <a
