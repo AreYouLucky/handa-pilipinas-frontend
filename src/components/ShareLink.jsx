@@ -1,7 +1,9 @@
 import { FaSquareFacebook } from "react-icons/fa6";
 
 const ShareLink = ({ article, slug }) => {
-  const previewUrl = new URL('https://your-vercel-app.vercel.app/api/og-preview');
+  const currentUrl = window.location.origin;
+  console.log(currentUrl)
+  const previewUrl = new URL(currentUrl+'/api/og-preview');
   previewUrl.searchParams.append("title", article.title);
   previewUrl.searchParams.append("excerpt", article.excerpt);
   previewUrl.searchParams.append("image", article.image);
