@@ -1,7 +1,7 @@
 import React from "react";
 import { StaticRouterProvider } from "react-router-dom/server";
 import { createStaticHandler, createStaticRouter } from "react-router-dom/server";
-import { routes } from "./routes/routes";
+import { routes } from "./routes/router";
 
 export async function render(url, res) {
   const { query, dataRoutes } = createStaticHandler(routes);

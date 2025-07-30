@@ -1,15 +1,15 @@
-// import React from "react";
-// import ReactDOM from "react-dom/client";
-// import { RouterProvider } from "react-router-dom";
-// import { router } from "./routes/router";
-// import "./index.css";
-// import "flowbite";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { RouterProvider } from "react-router-dom";
+import { router } from "./routes/router";
+import "./index.css";
+import "flowbite";
 
-// ReactDOM.createRoot(document.getElementById("root")).render(
-//   <React.StrictMode>
-//       <RouterProvider router={router} />
-//   </React.StrictMode>,
-// );
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+      <RouterProvider router={router} />
+  </React.StrictMode>,
+);
 
 // import "./index.css";
 // import "flowbite";
@@ -28,20 +28,20 @@
 // );
 
 
-import React from "react";
-import ReactDOM from "react-dom/client";
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-import { routes } from "./routes/routes";
-import "./index.css";
-import "flowbite";
+// import React from "react";
+// import ReactDOM from "react-dom/client";
+// import {
+//   createBrowserRouter,
+//   RouterProvider,
+// } from "react-router-dom";
+// import { routes } from "./routes/routes";
+// import "./index.css";
+// import "flowbite";
 
-const router = createBrowserRouter(routes);
+// const router = createBrowserRouter(routes);
 
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>
-);
+// ReactDOM.createRoot(document.getElementById("root")).render(
+//   <React.StrictMode>
+//     <RouterProvider router={router} />
+//   </React.StrictMode>
+// );
