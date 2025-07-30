@@ -1,3 +1,5 @@
+import { Buffer } from 'buffer';
+
 export default function handler(req, res) {
   const { title, excerpt, image, slug } = req.query;
 
@@ -5,14 +7,12 @@ export default function handler(req, res) {
     return res.status(400).send("Missing required parameters");
   }
 
-  
   const decodedTitle = decodeURIComponent(title);
   const decodedExcerpt = decodeURIComponent(excerpt);
   const ogImage = `https://handa-pilipinas-frontend.vercel.app/images/articles/${image}`;
   const articleUrl = `https://handa-pilipinas-frontend.vercel.app/view-article/${slug}`;
 
-  res.setHeader("Content-Type", "text/html; charset=utf-8");
-  res.status(200).send(`
+  const html = `
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -32,5 +32,9 @@ export default function handler(req, res) {
       <p>Redirecting to <a href="${articleUrl}">${articleUrl}</a>...</p>
     </body>
     </html>
-  `);
+  `;
+
+  res.setHeader("Content-Type", "text/html; charset=utf-8");
+  res.setHeader("Content-Length", Buffer.byteLength(html, 'utf-8'));
+  res.status(200).send(html);
 }
