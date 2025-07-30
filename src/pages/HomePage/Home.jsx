@@ -8,7 +8,9 @@ import { Worker } from '@react-pdf-viewer/core';
 import { Viewer } from '@react-pdf-viewer/core';
 import '@react-pdf-viewer/core/lib/styles/index.css';
 import { FaBookOpen } from "react-icons/fa6";
-
+import { zoomPlugin } from '@react-pdf-viewer/zoom';
+import '@react-pdf-viewer/core/lib/styles/index.css';
+import '@react-pdf-viewer/zoom/lib/styles/index.css';
 function Home() {
   const [articles, setArticles] = useState([]);
   const [videos, setVideos] = useState([]);
@@ -17,6 +19,9 @@ function Home() {
     filterArticles();
     filterVideos();
   }, []);
+
+  const zoomPluginInstance = zoomPlugin();
+  const { ZoomInButton, ZoomOutButton } = zoomPluginInstance;
 
   const filterVideos = () => {
     const filtered = data.filter(item => item.file_type === 2);
@@ -44,13 +49,22 @@ function Home() {
             <FaBookOpen className="text-2xl md:text-3xl mr-3" />
             REFERENCE FOR EMERGENCY AND DISASTER
           </h2>
-          <div className="m-auto w-full max-w-screen-2xl max-h-[90vh] overflow-scroll  px-8 md:py-10 py-0 text-gray-800 md:px-2 my-5">
+          <div className="m-auto w-full max-w-screen-2xl">
+
+            <div className="flex justify-end gap-2 p-2 border-b border-gray-200 bg-gray-50">
+              <ZoomOutButton />
+              <ZoomInButton />
+            </div>
+          </div>
+          <div className="m-auto w-full max-w-screen-2xl max-h-[80vh] overflow-scroll  px-8 py-0 text-gray-800 md:px-2 my-5">
             <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js">
-              <Viewer fileUrl="/pdf/RED_Book.pdf" defaultScale={1.4} />
+              <Viewer fileUrl="/pdf/RED_Book.pdf"
+                plugins={[zoomPluginInstance]}
+                defaultScale={1.25} />
             </Worker>
           </div>
         </Framer>
-        <div className="m-auto w-full max-w-screen-2xl border-b border-gray-400 mt-5"></div>
+        <div className="m-auto w-full max-w-screen-2xl border-b border-gray-400 mt-16"></div>
         <Framer animation="fade-right">
           <Partners />
         </Framer>
