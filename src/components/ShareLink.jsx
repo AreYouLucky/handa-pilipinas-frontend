@@ -10,7 +10,6 @@ const ShareLink = ({ article, slug }) => {
   previewUrl.searchParams.append("slug", slug);
 
   const shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(previewUrl.toString())}`;
-    console.log(previewUrl)
 
   return (
     <a
