@@ -1,4 +1,3 @@
-import { Helmet } from 'react-helmet-async'; // ✅ Use async version
 import { FaSquareFacebook } from "react-icons/fa6";
 
 const ShareLink = ({ article }) => {
@@ -8,19 +7,17 @@ const ShareLink = ({ article }) => {
 
   return (
     <>
-      <Helmet>
-        <meta property="og:type" content="article" />
-        <meta property="og:title" content={article.title} />
-        <meta property="og:description" content={article.excerpt} />
-        <meta
-          property="og:image"
-          content={`${window.location.origin}/images/articles/${article.thumbnail}`}
-        />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:url" content={currentUrl} />
-      </Helmet>
-
+      <title>{article.title}</title>
+      <meta property="og:type" content="article" />
+      <meta property="og:title" content={article.title} />
+      <meta property="og:description" content={article.excerpt} />
+      <meta
+        property="og:image"
+        content={`${window.location.origin}/images/articles/${article.thumbnail}`}
+      />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:url" content={currentUrl} />
       <a
         href={shareUrl}
         target="_blank"
