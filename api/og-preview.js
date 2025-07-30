@@ -18,17 +18,15 @@ export default function handler(req, res) {
     <head>
       <meta charset="UTF-8" />
       <title>${decodedTitle}</title>
-
       <meta property="og:type" content="article" />
-  <meta property="og:title" content="Pinoy-Made Tech" />
-  <meta property="og:description" content="Explore DRR tech" />
-  <meta property="og:image" content="https://handa-pilipinas-frontend.vercel.app/images/articles/3D.jpg" />
-  <meta property="og:image:secure_url" content="https://handa-pilipinas-frontend.vercel.app/images/articles/3D.jpg" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:url" content="https://handa-pilipinas-frontend.vercel.app/view-article/ready-for-adoption-pinoy-made-tech-on-disaster-risk-reduction-at-handa-pilipinas-expo-2023" />
-
-  <meta http-equiv="refresh" content="0;url=https://handa-pilipinas-frontend.vercel.app/view-article/ready-for-adoption-pinoy-made-tech-on-disaster-risk-reduction-at-handa-pilipinas-expo-2023" />
+      <meta property="og:title" content="${decodedTitle}" />
+      <meta property="og:description" content="${decodedExcerpt}" />
+      <meta property="og:image" content="${ogImage}" />
+      <meta property="og:image:secure_url" content="${ogImage}" />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:url" content="${articleUrl}" />
+      <meta http-equiv="refresh" content="0;url=${articleUrl}" />
     </head>
     <body>
       <p>Redirecting to <a href="${articleUrl}">${articleUrl}</a>...</p>
