@@ -15,7 +15,7 @@ function DashboardLayout() {
                 <BsMegaphoneFill className="text-gray-50"/>
               </div>
               <p className="py-1 font-medium text-xs md:text-base montserrat-regular">
-                Be Informed. Be Prepared. Handa Pilipinas!
+                Be Informed. Be Prepared. Handa Pilipinas!update
               </p>
             </div>
           </div>
