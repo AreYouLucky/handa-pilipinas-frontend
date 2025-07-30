@@ -42,7 +42,7 @@ function Article() {
             <Framer animation="fade-up">
               <div dangerouslySetInnerHTML={{ __html: purifyText(article.content || "") }} />
             </Framer>
-            <ShareLink article={article}/>
+            <ShareLink article={article} slug={slug}/>
           </div>
           <div className='w-full md:mt-0 mt-8'>
             <Framer animation="zoom-in">
