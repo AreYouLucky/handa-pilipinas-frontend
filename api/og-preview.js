@@ -18,6 +18,7 @@ export default function handler(req, res) {
     <head>
       <meta charset="UTF-8" />
       <title>${decodedTitle}</title>
+
       <meta property="og:type" content="article" />
       <meta property="og:title" content="${decodedTitle}" />
       <meta property="og:description" content="${decodedExcerpt}" />
@@ -26,6 +27,7 @@ export default function handler(req, res) {
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
       <meta property="og:url" content="${articleUrl}" />
+
       <meta http-equiv="refresh" content="0;url=${articleUrl}" />
     </head>
     <body>
