@@ -5,6 +5,7 @@ export default function handler(req, res) {
     return res.status(400).send("Missing required parameters");
   }
 
+  
   const decodedTitle = decodeURIComponent(title);
   const decodedExcerpt = decodeURIComponent(excerpt);
   const ogImage = `https://handa-pilipinas-frontend.vercel.app/images/articles/${image}`;
