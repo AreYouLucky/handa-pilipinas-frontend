@@ -14,8 +14,8 @@ function Navbar() {
     "block text-gray-800 hover:bg-gray-700 hover:text-gray-100 hover:scale-105 duration-300 md:hover:bg-transparent border-gray-700 montserrat-bold text-lg";
 
   return (
-    <nav className="border-gray-200 bg-gray-50">
-      <div className="max-w-screen-3xl mx-auto flex flex-wrap items-center justify-between p-4 md:p-2">
+    <nav className="border-gray-200 bg-[#fffffff5]">
+      <div className="max-w-screen-3xl mx-auto flex flex-wrap items-center justify-between p-3 md:p-0">
         <Link to="/">
           <img
             src="/images/logos/Theme_HANDA PILIPINAS 2025.png"
