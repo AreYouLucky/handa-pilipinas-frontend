@@ -61,7 +61,7 @@ function Partners() {
     return (
         <>
             <section className="space-y-1 px-8 md:py-4 py-0 text-gray-800 md:px-2 md:pb-5 flex justify-center">
-                <div className=" w-full max-w-screen-2xl gap-x-8  py-4 md:px-0 md:py-10">
+                <div className=" w-full max-w-screen-2xl gap-x-8 md:px-0 md:pb-10 md:pt-2">
                     <h2 className="text-lg montserrat-bold mb-4 flex rounded-full py-1 font-bold text-gray-700 md:text-2xl justify-center">
                         <FaConnectdevelop className="text-2xl md:text-3xl mr-3" />
                         PARTNERS
