@@ -1,22 +1,25 @@
 import { Helmet } from 'react-helmet';
-import { useLocation } from 'react-router-dom';
 import { FaSquareFacebook } from "react-icons/fa6";
 
 const ShareLink = ({ article }) => {
   const currentUrl = window.location.href;
 
   const shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}`;
+  const img_url = window.location.origin+'/images/articles/'+article.image
 
   return (
     <>
       <Helmet>
         <title>{article.title}</title>
+        <meta property="og:type" content="article" />
         <meta property="og:title" content={article.title} />
         <meta property="og:description" content={article.excerpt} />
         <meta
           property="og:image"
-          content={`${window.location.origin}/images/articles/${article.image}`}
+          content={img_url}
         />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         <meta property="og:url" content={currentUrl} />
       </Helmet>
       <a
