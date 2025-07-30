@@ -43,20 +43,22 @@ function Home() {
         <Framer animation="fade-left">
           <VideosMainList videos={videos} />
         </Framer>
-        <div className="m-auto w-full max-w-screen-2xl border-b border-gray-400 my-8"></div>
         <Framer animation="fade-up">
-          <h2 className="text-lg montserrat-bold my-4 flex rounded-full py-1 font-bold text-gray-700 md:text-2xl justify-center">
-            <FaBookOpen className="text-2xl md:text-3xl mr-3" />
-            REFERENCE FOR EMERGENCY AND DISASTER
-          </h2>
-          <div className="m-auto w-full max-w-screen-2xl">
-
-            <div className="flex justify-end gap-2 p-2 border-b border-gray-200 bg-gray-50">
+          <div className="m-auto w-full max-w-screen-2xl flex justify-between bg-gray-50 items-center rounded-lg my-5 px-4">
+            <div className="hidden md:block">
+            </div>
+            <div>
+              <h2 className="text-sm montserrat-bold my-4 flex items-center rounded-full py-1 font-bold text-gray-700 md:text-2xl justify-center">
+                <FaBookOpen className="text-2xl md:text-3xl mr-3" />
+                REFERENCE FOR EMERGENCY AND DISASTER BOOK
+              </h2>
+            </div>
+            <div className="flex justify-end gap-2 p-2  ">
               <ZoomOutButton />
               <ZoomInButton />
             </div>
           </div>
-          <div className="m-auto w-full max-w-screen-2xl max-h-[80vh] overflow-scroll  px-8 py-0 text-gray-800 md:px-2 my-5">
+          <div className="m-auto w-full max-w-screen-2xl max-h-[80vh] overflow-y-scroll  px-8 py-0 text-gray-800 md:px-2 my-5">
             <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js">
               <Viewer fileUrl="/pdf/RED_Book.pdf"
                 plugins={[zoomPluginInstance]}
@@ -64,7 +66,7 @@ function Home() {
             </Worker>
           </div>
         </Framer>
-        <div className="m-auto w-full max-w-screen-2xl border-b border-gray-400 mt-16"></div>
+        <div className="m-auto w-full max-w-screen-2xl border-b border-gray-400 mt-16 mb-5"></div>
         <Framer animation="fade-right">
           <Partners />
         </Framer>
