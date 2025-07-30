@@ -7,6 +7,7 @@ import MdNavigations from "./MdNavigations";
 import SearchBox from "./SearchBox";
 function Navbar() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isResourcesOpen, setIsResourcesOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
   const url = location.pathname;
@@ -38,106 +39,128 @@ function Navbar() {
         </button>
         
         {isMobileMenuOpen && (
-          <div className="mt-2 w-full border-y border-gray-200 py-5">
-            <div className="py-2 mb-4">
-              <SearchBox />
-            </div>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <button
-                  onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-                  className="group flex w-full items-center rounded-lg py-2"
-                >
-                  <span
-                    className={`ms-2 flex-1 text-left whitespace-nowrap ${navigation_text}`}
-                  >
-                    MEDIA
-                  </span>
-                  <MdArrowDropDown
-                    className={`text-gray-700 transition-transform ${isDropdownOpen ? "rotate-180" : ""}`}
-                    size={20}
-                  />
-                </button>
+<div className="mt-2 w-full border-y border-gray-200 py-5">
+  <div className="py-2 mb-4">
+    <SearchBox />
+  </div>
 
-                {isDropdownOpen && (
-                  <ul className="animate-slideInRight space-y-2 py-2">
-                    <li className={url == '/press-release' ? 'bg-gray-200 rounded-full' : ' '}>
-                      <Link
-                        to="/press-release"
-                        className="group flex w-full items-center rounded-lg p-2 pl-11 duration-300 hover:scale-105 "
-                      >
-                        <span className={navigation_text}>PRESS RELEASE</span>
-                      </Link>
-                    </li>
-                    <li className={url == '/speeches' ? 'bg-gray-200 rounded-full' : ' '}>
-                      <Link
-                        to="/speeches"
-                        className="group flex w-full items-center rounded-lg p-2 pl-11 duration-300 hover:scale-105"
-                      >
-                        <span className={navigation_text}>SPEECHES</span>
-                      </Link>
-                    </li>
-                    <li className={url == '/archives' ? 'bg-gray-200 rounded-full' : ' '}>
-                      <Link
-                        to="/archives"
-                        className="group flex w-full items-center rounded-lg p-2 pl-11 duration-300 hover:scale-105"
-                      >
-                        <span className={navigation_text}>ARCHIVES</span>
-                      </Link>
-                    </li>
-                  </ul>
-                )}
-              </li>
-              <li className={url == '/activities' ? 'bg-gray-200 rounded-full' : ' '}>
-                <Link
-                  to="/activities"
-                  className={`group flex items-center rounded-lg p-2 duration-300 hover:scale-105`}
-                >
-                  <span
-                    className={`flex-1 text-left whitespace-nowrap ${navigation_text}`}
-                  >
-                    General Program of Activities
-                  </span>
-                </Link>
-              </li>
-              <li className={url == '/technologies' ? 'bg-gray-200 rounded-full' : ' '}>
-                <Link
-                  to="/technologies"
-                  className={`group flex items-center rounded-lg p-2 duration-300 hover:scale-105`}
-                >
-                  <span
-                    className={`flex-1 text-left whitespace-nowrap ${navigation_text}`}
-                  >
-                    Featured Technologies
-                  </span>
-                </Link>
-              </li>
-              <li className={url == '/videos' ? 'bg-gray-200 rounded-full' : ' '}>
-                <Link
-                  to="/videos"
-                  className={`group flex items-center rounded-lg p-2 duration-300 hover:scale-105`}
-                >
-                  <span
-                    className={`flex-1 text-left whitespace-nowrap ${navigation_text}`}
-                  >
-                    Videos
-                  </span>
-                </Link>
-              </li>
-              <li className={url == '/about' ? 'bg-gray-200 rounded-full' : ' '}>
-                <Link
-                  to="/about"
-                  className={`group flex items-center rounded-lg p-2 duration-300 hover:scale-105`}
-                >
-                  <span
-                    className={`flex-1 text-left whitespace-nowrap ${navigation_text}`}
-                  >
-                    About
-                  </span>
-                </Link>
-              </li>
-            </ul>
-          </div>
+  <ul className="space-y-2 text-sm">
+    {/* HOME */}
+    <li className={url == '/' ? 'bg-gray-200 rounded-full' : ''}>
+      <Link to="/" className="group flex items-center rounded-lg p-2 duration-300 hover:scale-105">
+        <span className={`flex-1 text-left whitespace-nowrap ${navigation_text}`}>
+          Home
+        </span>
+      </Link>
+    </li>
+
+    {/* MEDIA Dropdown */}
+    <li>
+      <button
+        onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+        className="group flex w-full items-center rounded-lg py-2"
+      >
+        <span className={`ms-2 flex-1 text-left whitespace-nowrap ${navigation_text}`}>MEDIA</span>
+        <MdArrowDropDown
+          className={`text-gray-700 transition-transform ${isDropdownOpen ? "rotate-180" : ""}`}
+          size={20}
+        />
+      </button>
+
+      {isDropdownOpen && (
+        <ul className="animate-slideInRight space-y-2 py-2">
+          <li className={url == '/press-release' ? 'bg-gray-200 rounded-full' : ''}>
+            <Link to="/press-release" className="group flex w-full items-center rounded-lg p-2 pl-11 duration-300 hover:scale-105">
+              <span className={navigation_text}>Press Release</span>
+            </Link>
+          </li>
+          <li className={url == '/speeches' ? 'bg-gray-200 rounded-full' : ''}>
+            <Link to="/speeches" className="group flex w-full items-center rounded-lg p-2 pl-11 duration-300 hover:scale-105">
+              <span className={navigation_text}>Speeches</span>
+            </Link>
+          </li>
+          <li className={url == '/archives' ? 'bg-gray-200 rounded-full' : ''}>
+            <Link to="/archives" className="group flex w-full items-center rounded-lg p-2 pl-11 duration-300 hover:scale-105">
+              <span className={navigation_text}>Archives</span>
+            </Link>
+          </li>
+          <li className={url == '/photos' ? 'bg-gray-200 rounded-full' : ''}>
+            <Link to="/photos" className="group flex w-full items-center rounded-lg p-2 pl-11 duration-300 hover:scale-105">
+              <span className={navigation_text}>Photos</span>
+            </Link>
+          </li>
+          <li className={url == '/videos' ? 'bg-gray-200 rounded-full' : ''}>
+            <Link to="/videos" className="group flex w-full items-center rounded-lg p-2 pl-11 duration-300 hover:scale-105">
+              <span className={navigation_text}>Videos</span>
+            </Link>
+          </li>
+        </ul>
+      )}
+    </li>
+
+    {/* FEATURED TECHNOLOGIES */}
+    <li className={url == '/technologies' ? 'bg-gray-200 rounded-full' : ''}>
+      <Link to="/technologies" className="group flex items-center rounded-lg p-2 duration-300 hover:scale-105">
+        <span className={`flex-1 text-left whitespace-nowrap ${navigation_text}`}>
+          Featured Technologies
+        </span>
+      </Link>
+    </li>
+
+    {/* RESOURCES Dropdown */}
+    <li>
+      <button
+        onClick={() => setIsResourcesOpen(!isResourcesOpen)}
+        className="group flex w-full items-center rounded-lg py-2"
+      >
+        <span className={`ms-2 flex-1 text-left whitespace-nowrap ${navigation_text}`}>RESOURCES</span>
+        <MdArrowDropDown
+          className={`text-gray-700 transition-transform ${isResourcesOpen ? "rotate-180" : ""}`}
+          size={20}
+        />
+      </button>
+
+      {isResourcesOpen && (
+        <ul className="animate-slideInRight space-y-2 py-2">
+          <li className={url == '/policies-and-laws' ? 'bg-gray-200 rounded-full' : ''}>
+            <Link to="/policies-and-laws" className="group flex w-full items-center rounded-lg p-2 pl-11 duration-300 hover:scale-105">
+              <span className={navigation_text}>DRR Policies and Laws</span>
+            </Link>
+          </li>
+          <li className={url == '/learning-materials' ? 'bg-gray-200 rounded-full' : ''}>
+            <Link to="/learning-materials" className="group flex w-full items-center rounded-lg p-2 pl-11 duration-300 hover:scale-105">
+              <span className={navigation_text}>Learning Materials</span>
+            </Link>
+          </li>
+          <li className={url == '/drr-stats' ? 'bg-gray-200 rounded-full' : ''}>
+            <Link to="/drr-stats" className="group flex w-full items-center rounded-lg p-2 pl-11 duration-300 hover:scale-105">
+              <span className={navigation_text}>DRR Stats</span>
+            </Link>
+          </li>
+        </ul>
+      )}
+    </li>
+
+    {/* ABOUT */}
+    <li className={url == '/about' ? 'bg-gray-200 rounded-full' : ''}>
+      <Link to="/about" className="group flex items-center rounded-lg p-2 duration-300 hover:scale-105">
+        <span className={`flex-1 text-left whitespace-nowrap ${navigation_text}`}>
+          About HANDA PILIPINAS
+        </span>
+      </Link>
+    </li>
+
+    {/* CONTACTS */}
+    <li className={url == '/contacts' ? 'bg-gray-200 rounded-full' : ''}>
+      <Link to="/contacts" className="group flex items-center rounded-lg p-2 duration-300 hover:scale-105">
+        <span className={`flex-1 text-left whitespace-nowrap ${navigation_text}`}>
+          Contacts
+        </span>
+      </Link>
+    </li>
+  </ul>
+</div>
+
         )}
       </div>
     </nav>
