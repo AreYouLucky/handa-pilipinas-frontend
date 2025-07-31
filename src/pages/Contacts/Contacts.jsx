@@ -26,7 +26,20 @@ function Contacts() {
                             <span className="flex text-sm md:text-base text-center md:text-start text-gray-500 mb-8">
                                 DOST Compound, General Santos Avenue, Central Bicutan, Taguig, Metro Manila, Philippines
                             </span>
-                            <div className="grid grid-cols-1 md:grid-cols-2 mt-3 md:gap-7 gap-3">
+                            <div className="w-full flex gap-x-4 items-center">
+                                <div className="flex-none md:w-10 md:h-10 w-6 h-6 bg-red-600 text-white rounded-lg flex items-center justify-center">
+                                        <MdEmail className="text-white text-lg md:text-2xl" />
+                                    </div>
+                                    <div className="space-y-1  md:text-sm  text-xs">
+                                        <h4 className="text-lg text-gray-800 montserrat-bold">
+                                            Email
+                                        </h4>
+                                        <p>
+                                            someemail@gmail.com
+                                        </p>
+                                    </div>
+                            </div>
+                            {/* <div className="grid grid-cols-1 md:grid-cols-2 mt-3 md:gap-7 gap-3">
                                 <div className=" p-4  flex gap-x-4 border border-gray-200 rounded-lg shadow-sm">
                                     <div className="flex-none md:w-10 md:h-10 w-6 h-6 bg-red-600 text-white rounded-lg flex items-center justify-center">
                                         <FaPhoneAlt className="text-white text-lg md:text-2xl" />
@@ -103,7 +116,7 @@ function Contacts() {
                                         </p>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </Framer>
                     <Framer animation="fade-down">

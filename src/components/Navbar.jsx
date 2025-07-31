@@ -2,166 +2,138 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { MdArrowDropDown } from "react-icons/md";
 import { RxHamburgerMenu } from "react-icons/rx";
-import MdNavigations from "./MdNavigations";
+import MiddleNav from "./MiddleNav";
 import SearchBox from "./SearchBox";
+
 function Navbar() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isResourcesOpen, setIsResourcesOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
   const url = location.pathname;
+
   const navigation_text =
-    "block text-gray-800 hover:bg-gray-700 hover:text-gray-100 hover:scale-105 duration-300 md:hover:bg-transparent border-gray-700 montserrat-bold text-lg";
+    "block text-gray-800 hover:bg-gray-700 hover:text-white hover:scale-105 duration-300 md:hover:bg-transparent border-gray-700 montserrat-bold text-base";
 
   return (
-    <nav className="border-gray-200 bg-[#fffffff5]">
-      <div className="max-w-screen-3xl mx-auto flex flex-wrap items-center justify-between p-3 md:p-0">
-        <Link to="/">
+    <nav className="bg-white border-b border-gray-200 shadow-sm z-[9999] w-full">
+      <div className="max-w-screen-3xl mx-auto w-full px-4 py-2 flex items-center justify-between">
+        {/* Logo — visible on all screens */}
+        <div className="flex items-center">
+          <Link to="/">
           <img
             src="/images/logos/Theme_HANDA PILIPINAS 2025.png"
-            className="flex h-8 items-center space-x-3 border border-gray-800 md:h-20 rtl:space-x-reverse"
+            className="h-8 md:h-14 border border-gray-800"
             alt="Logo"
           />
-        </Link>
-        <div className="hidden md:flex gap-4">
-          <SearchBox />
-          <MdNavigations/>
+          </Link>
         </div>
-        <button
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          type="button"
-          className="block h-10 w-10 items-center justify-center rounded-lg p-2 hover:bg-gray-100 md:hidden"
-          aria-expanded={isMobileMenuOpen}
-          aria-label="Toggle navigation menu"
-        >
-          <RxHamburgerMenu className="text-3xl" />
-        </button>
-        
-        {isMobileMenuOpen && (
-<div className="mt-2 w-full border-y border-gray-200 py-5">
-  <div className="py-2 mb-4">
-    <SearchBox />
-  </div>
 
-  <ul className="space-y-2 text-sm">
-    {/* HOME */}
-    <li className={url == '/' ? 'bg-gray-200 rounded-full' : ''}>
-      <Link to="/" className="group flex items-center rounded-lg p-2 duration-300 hover:scale-105">
-        <span className={`flex-1 text-left whitespace-nowrap ${navigation_text}`}>
-          Home
-        </span>
-      </Link>
-    </li>
+        {/* Desktop Nav */}
+        <div className="hidden md:flex w-full items-center justify-between gap-8">
+          <MiddleNav />
+          <SearchBox />
+        </div>
 
-    {/* MEDIA Dropdown */}
-    <li>
-      <button
-        onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-        className="group flex w-full items-center rounded-lg py-2"
-      >
-        <span className={`ms-2 flex-1 text-left whitespace-nowrap ${navigation_text}`}>MEDIA</span>
-        <MdArrowDropDown
-          className={`text-gray-700 transition-transform ${isDropdownOpen ? "rotate-180" : ""}`}
-          size={20}
-        />
-      </button>
-
-      {isDropdownOpen && (
-        <ul className="animate-slideInRight space-y-2 py-2">
-          <li className={url == '/press-release' ? 'bg-gray-200 rounded-full' : ''}>
-            <Link to="/press-release" className="group flex w-full items-center rounded-lg p-2 pl-11 duration-300 hover:scale-105">
-              <span className={navigation_text}>Press Release</span>
-            </Link>
-          </li>
-          <li className={url == '/speeches' ? 'bg-gray-200 rounded-full' : ''}>
-            <Link to="/speeches" className="group flex w-full items-center rounded-lg p-2 pl-11 duration-300 hover:scale-105">
-              <span className={navigation_text}>Speeches</span>
-            </Link>
-          </li>
-          <li className={url == '/archives' ? 'bg-gray-200 rounded-full' : ''}>
-            <Link to="/archives" className="group flex w-full items-center rounded-lg p-2 pl-11 duration-300 hover:scale-105">
-              <span className={navigation_text}>Archives</span>
-            </Link>
-          </li>
-          <li className={url == '/photos' ? 'bg-gray-200 rounded-full' : ''}>
-            <Link to="/photos" className="group flex w-full items-center rounded-lg p-2 pl-11 duration-300 hover:scale-105">
-              <span className={navigation_text}>Photos</span>
-            </Link>
-          </li>
-          <li className={url == '/videos' ? 'bg-gray-200 rounded-full' : ''}>
-            <Link to="/videos" className="group flex w-full items-center rounded-lg p-2 pl-11 duration-300 hover:scale-105">
-              <span className={navigation_text}>Videos</span>
-            </Link>
-          </li>
-        </ul>
-      )}
-    </li>
-
-    {/* FEATURED TECHNOLOGIES */}
-    <li className={url == '/technologies' ? 'bg-gray-200 rounded-full' : ''}>
-      <Link to="/technologies" className="group flex items-center rounded-lg p-2 duration-300 hover:scale-105">
-        <span className={`flex-1 text-left whitespace-nowrap ${navigation_text}`}>
-          Featured Technologies
-        </span>
-      </Link>
-    </li>
-
-    {/* RESOURCES Dropdown */}
-    <li>
-      <button
-        onClick={() => setIsResourcesOpen(!isResourcesOpen)}
-        className="group flex w-full items-center rounded-lg py-2"
-      >
-        <span className={`ms-2 flex-1 text-left whitespace-nowrap ${navigation_text}`}>RESOURCES</span>
-        <MdArrowDropDown
-          className={`text-gray-700 transition-transform ${isResourcesOpen ? "rotate-180" : ""}`}
-          size={20}
-        />
-      </button>
-
-      {isResourcesOpen && (
-        <ul className="animate-slideInRight space-y-2 py-2">
-          <li className={url == '/policies-and-laws' ? 'bg-gray-200 rounded-full' : ''}>
-            <Link to="/policies-and-laws" className="group flex w-full items-center rounded-lg p-2 pl-11 duration-300 hover:scale-105">
-              <span className={navigation_text}>DRR Policies and Laws</span>
-            </Link>
-          </li>
-          <li className={url == '/learning-materials' ? 'bg-gray-200 rounded-full' : ''}>
-            <Link to="/learning-materials" className="group flex w-full items-center rounded-lg p-2 pl-11 duration-300 hover:scale-105">
-              <span className={navigation_text}>Learning Materials</span>
-            </Link>
-          </li>
-          <li className={url == '/drr-stats' ? 'bg-gray-200 rounded-full' : ''}>
-            <Link to="/drr-stats" className="group flex w-full items-center rounded-lg p-2 pl-11 duration-300 hover:scale-105">
-              <span className={navigation_text}>DRR Stats</span>
-            </Link>
-          </li>
-        </ul>
-      )}
-    </li>
-
-    {/* ABOUT */}
-    <li className={url == '/about' ? 'bg-gray-200 rounded-full' : ''}>
-      <Link to="/about" className="group flex items-center rounded-lg p-2 duration-300 hover:scale-105">
-        <span className={`flex-1 text-left whitespace-nowrap ${navigation_text}`}>
-          About HANDA PILIPINAS
-        </span>
-      </Link>
-    </li>
-
-    {/* CONTACTS */}
-    <li className={url == '/contacts' ? 'bg-gray-200 rounded-full' : ''}>
-      <Link to="/contacts" className="group flex items-center rounded-lg p-2 duration-300 hover:scale-105">
-        <span className={`flex-1 text-left whitespace-nowrap ${navigation_text}`}>
-          Contacts
-        </span>
-      </Link>
-    </li>
-  </ul>
-</div>
-
-        )}
+        {/* Mobile Hamburger — right side on small screens */}
+        <div className="md:hidden flex items-center">
+          <button
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            type="button"
+            className="ml-4 h-10 w-10 rounded-md p-2 text-gray-700 hover:bg-gray-100 focus:outline-none"
+            aria-expanded={isMobileMenuOpen}
+            aria-label="Toggle mobile menu"
+          >
+            <RxHamburgerMenu className="text-3xl" />
+          </button>
+        </div>
       </div>
+
+
+      {/* Mobile Dropdown Menu */}
+      {isMobileMenuOpen && (
+        <div className="md:hidden border-t border-gray-200 px-4 py-4 bg-white">
+          <div className="mb-4">
+            <SearchBox />
+          </div>
+          <ul className="space-y-2 text-sm font-medium">
+            {/* HOME */}
+            <li className={url === '/' ? 'bg-gray-200 rounded-md' : ''}>
+              <Link to="/" className={`block p-2 ${navigation_text}`}>Home</Link>
+            </li>
+            {/* ABOUT */}
+            <li className={url === '/about' ? 'bg-gray-200 rounded-md' : ''}>
+              <Link to="/about" className={`block p-2 ${navigation_text}`}>
+                About
+              </Link>
+            </li>
+
+
+            {/* FEATURED TECHNOLOGIES */}
+            <li className={url === '/technologies' ? 'bg-gray-200 rounded-md' : ''}>
+              <Link to="/technologies" className={`block p-2 ${navigation_text}`}>
+                Featured Technologies
+              </Link>
+            </li>
+
+            {/* RESOURCES Dropdown */}
+            <li>
+              <button
+                onClick={() => setIsResourcesOpen(!isResourcesOpen)}
+                className="w-full flex items-center justify-between p-2"
+              >
+                <span className={navigation_text}>RESOURCES</span>
+                <MdArrowDropDown
+                  className={`text-gray-700 transition-transform ${isResourcesOpen ? "rotate-180" : ""}`}
+                  size={20}
+                />
+              </button>
+              {isResourcesOpen && (
+                <ul className="pl-4 mt-2 space-y-1">
+                  {[
+                    { to: "/policies-and-laws", label: "DRR Policies and Laws" },
+                    { to: "/learning-materials", label: "Learning Materials" },
+                    { to: "/drr-stats", label: "DRR Stats" },
+                  ].map(({ to, label }) => (
+                    <li key={to} className={url === to ? 'bg-gray-200 rounded-md' : ''}>
+                      <Link to={to} className={`block p-2 ${navigation_text} pl-4`}>
+                        {label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </li>
+
+            {/* MEDIA Dropdown */}
+            <li>
+              <button
+                onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                className="w-full flex items-center justify-between p-2"
+              >
+                <span className={navigation_text}>MEDIA</span>
+                <MdArrowDropDown
+                  className={`text-gray-700 transition-transform ${isDropdownOpen ? "rotate-180" : ""}`}
+                  size={20}
+                />
+              </button>
+              {isDropdownOpen && (
+                <ul className="pl-4 mt-2 space-y-1">
+                  {["press-release", "speeches", "archives", "photos", "videos"].map((route) => (
+                    <li key={route} className={url === `/${route}` ? 'bg-gray-200 rounded-md' : ''}>
+                      <Link to={`/${route}`} className={`block p-2 ${navigation_text} pl-4 capitalize`}>
+                        {route.replace("-", " ")}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </li>
+
+
+          </ul>
+        </div>
+      )}
     </nav>
   );
 }

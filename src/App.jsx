@@ -3,23 +3,19 @@ import Banner from "./components/Banner";
 import Footer from "./components/Footer";
 import Framer from "./components/Framer";
 import { Outlet } from "react-router-dom";
-import { BsMegaphoneFill } from "react-icons/bs";
 function DashboardLayout() {
   return (
     <>
       <div className="min-h-[100vh] w-full max-w-screen relative scroll-smooth">
-        <div className="bg-gray-700">
-          <div className=" mx-auto px-4 py-2 flex items-start justify-center text-white md:px-8">
-            <div className="flex gap-x-4 items-center">
-              <div className="w-8 h-8 flex-none rounded-lg bg-red-600 flex items-center justify-center">
-                <BsMegaphoneFill className="text-gray-50"/>
-              </div>
-              <p className="py-1 font-medium text-xs md:text-base montserrat-regular">
-                Be Informed. Be Prepared. Handa Pilipinas!
-              </p>
-            </div>
+        {/* <div className="bg-gray-900">
+          <div className=" px-4  flex items-start justify-start text-white md:px-10">
+              <img
+                src="/images/logos/Theme_HANDA PILIPINAS 2025.png"
+                className="flex h-8 items-center space-x-3 border border-gray-800 md:h-18 rtl:space-x-reverse"
+                alt="Logo"
+              />
           </div>
-        </div>
+        </div> */}
         <div className="sticky top-0 z-50">
           <Framer animation="fade-in">
             <Navbar />

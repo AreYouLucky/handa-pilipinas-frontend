@@ -19,7 +19,7 @@ function Banner() {
       keyboard={true}
       modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}
       autoplay={{
-        delay: 5000,
+        delay: 8000,
         disableOnInteraction: false,
       }}
       className="mySwiper"
