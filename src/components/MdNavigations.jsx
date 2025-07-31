@@ -100,7 +100,7 @@ function MdNavigations() {
                                     <Link to="/speeches" className={` ${navigation_text} ml-3`}>Speeches</Link>
                                 </li>
                                 <li className={`${li_text} ${url == '/archives' ? hightlight : ' '}`}>
-                                    <Link to="/archives" className={` ${navigation_text} ml-3`}>Achives</Link>
+                                    <Link to="/archives" className={` ${navigation_text} ml-3`}>Archives</Link>
                                 </li>
                                 <li className={`${li_text} ${url == '/photos' ? hightlight : ' '}`}>
                                     <Link to="/photos" className={` ${navigation_text} ml-3`}>Photos</Link>
