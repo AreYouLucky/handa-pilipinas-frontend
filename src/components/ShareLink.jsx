@@ -19,7 +19,7 @@ const ShareLink = ({ article }) => {
         content={`${window.location.origin}/images/articles/${article.thumbnail}`}
       />
       <meta property="og:image:width" content="1200" />
-      <meta property="og:image:height" content="630" />
+      <meta property="og:image:height" content="200" />
       <meta property="og:url" content={currentUrl} />
       <meta authorship='junjun' />
       <a
