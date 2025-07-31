@@ -1,12 +1,9 @@
-import React from "react";
-import { FaFacebookSquare } from "react-icons/fa";
-import { FaPhone } from "react-icons/fa6";
+import { FaSquareXTwitter } from "react-icons/fa6";
 import { IoMdMail } from "react-icons/io";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
-import { AiFillTikTok } from "react-icons/ai";
 import { IoLogoYoutube } from "react-icons/io";
-
+import { BsFillThreadsFill } from "react-icons/bs";
 
 function Footer() {
   return (
@@ -54,21 +51,23 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className=" flex flex-col items-center justify-between border-t border-gray-50 pb-10 pt-4 mt-10 ">
-
-          <div className=" items-center justify-between flex w-full gap-4">
-            <p className="text-gray-100 md:text-base text-sm">Copyright © 2025 Handa Pilipinas - All rights reserved.</p>
+        <div className=" flex md:flex-col flex-row items-center justify-between border-t border-gray-50 pb-10 pt-4 mt-10 ">
+          <div className=" items-center justify-between flex md:flex-row flex-col w-full md:gap-4">
+            <p className="text-gray-100 md:text-base text-sm text-center md:text-start">Copyright © 2025 Handa Pilipinas - All rights reserved.</p>
             <div className="flex items-center gap-x-6 text-gray-400 mt-6">
-              <a href="/" target="_Blank">
+              <a href="https://www.facebook.com/DOSTph/" target="_Blank">
                 <FaFacebook className="text-3xl text-blue-500 bg-gray-100 rounded-full hover:scale-125 duration-200" />
               </a>
-              <a href="/" target="_Blank">
+              <a href="https://x.com/dostphl?lang=en" target="_Blank">
+                <FaSquareXTwitter  className="text-3xl text-slate-600 bg-gray-100 rounded-md hover:scale-125 duration-200" />
+              </a>
+              <a href="https://www.instagram.com/dost.ph/?hl=en" target="_Blank">
                 <FaInstagramSquare className="text-3xl text-pink-600 bg-gray-100 rounded-md hover:scale-125 duration-200" />
               </a>
-              <a href="/" target="_Blank">
-                <AiFillTikTok className="text-3xl text-slate-600 bg-gray-100 rounded-md hover:scale-125 duration-200" />
+              <a href="https://www.threads.com/@dost.ph" target="_Blank">
+                <BsFillThreadsFill className="text-3xl text-slate-600 bg-gray-100 rounded-md hover:scale-125 duration-200" />
               </a>
-              <a href="/" target="_Blank">
+              <a href="https://www.youtube.com/channel/UCu3ZUWLIGcwy-XM1uJVkIuA" target="_Blank">
                 <IoLogoYoutube className="text-3xl text-red-500 bg-gray-100 rounded-sm px-[3px] hover:scale-125 duration-200" />
               </a>
             </div>
