@@ -8,6 +8,9 @@ const ShareLink = ({ article }) => {
   return (
     <>
       <title>{article.title}</title>
+      <meta name="description" content={article.excerpt} />
+      <meta name="keywords" content="Handa Pilipinas" />
+      <meta name="author" content={'junjun'} ></meta>
       <meta property="og:type" content="article" />
       <meta property="og:title" content={article.title} />
       <meta property="og:description" content={article.excerpt} />
@@ -18,7 +21,7 @@ const ShareLink = ({ article }) => {
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
       <meta property="og:url" content={currentUrl} />
-      <meta  authorship='junjun'/>
+      <meta authorship='junjun' />
       <a
         href={shareUrl}
         target="_blank"
