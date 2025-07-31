@@ -12,7 +12,7 @@ function Footer() {
   return (
     <footer className="montserrat bg-[#ED1E24] pt-4">
       <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
-        <div className="md:mt-16 mt-6 grid grid-cols-1 md:grid-cols-2 md:space-y-6 gap-8 my-5">
+        <div className="md:mt-8 mt-6 grid grid-cols-1 md:grid-cols-2 md:space-y-6 gap-8 my-5">
           <div className="text-gray-100 my-auto">
             <div className="flex gap-4 items-center flex-row">
               <div className=" ">
@@ -23,7 +23,7 @@ function Footer() {
                 />
               </div>
               <div>
-                <p className='montserrat-bold md:text-2xl text-lg text-start'>
+                <p className='montserrat-bold md:text-3xl text-lg text-start'>
                   Department of Science and Technology
                 </p>
               </div>
@@ -49,12 +49,12 @@ function Footer() {
           <div className="">
             <div className='w-full  md:pr-10'>
               <div className="rounded-lg overflow-hidden shadow-md border border-gray-300">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3862.90778794198!2d121.04423850774764!3d14.48998271793831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397cf13c1948447%3A0x510c7e818adcc6ee!2sDepartment%20of%20Science%20and%20Technology%20-%20Main%20Compound!5e0!3m2!1sen!2sph!4v1753766191403!5m2!1sen!2sph" width="100%" height="350" allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3862.90778794198!2d121.04423850774764!3d14.48998271793831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397cf13c1948447%3A0x510c7e818adcc6ee!2sDepartment%20of%20Science%20and%20Technology%20-%20Main%20Compound!5e0!3m2!1sen!2sph!4v1753766191403!5m2!1sen!2sph" width="100%" height="320" allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
               </div>
             </div>
           </div>
         </div>
-        <div className=" flex flex-col items-center justify-between border-t border-gray-50 pb-10 pt-4">
+        <div className=" flex flex-col items-center justify-between border-t border-gray-50 pb-10 pt-4 mt-10 ">
 
           <div className=" items-center justify-between flex w-full gap-4">
             <p className="text-gray-100 md:text-base text-sm">Copyright © 2025 Handa Pilipinas - All rights reserved.</p>
