@@ -35,7 +35,7 @@ function Contacts() {
                                             Email
                                         </h4>
                                         <p>
-                                            someemail@gmail.com
+                                            <a href="mailto:ousec.drrcc@dost.gov.ph">ousec.drrcc@dost.gov.ph</a>
                                         </p>
                                     </div>
                             </div>
