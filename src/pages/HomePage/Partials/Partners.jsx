@@ -1,4 +1,5 @@
 import { FaConnectdevelop } from "react-icons/fa";
+import './css/btn.css'
 
 function Partners() {
     const partners = [
@@ -69,9 +70,9 @@ function Partners() {
                     <ul className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                         {
                             partners.map((item, idx) => (
-                                <li key={idx} className="w-full flex items-center rounded-lg border border-gray-200 p-5 hover:scale-105 shadow-md duration-200">
+                                <li key={idx} className="w-full flex items-center rounded-lg border border-gray-200 py-5 px-7  hover:scale-105 shadow-md duration-200 relative">
                                     <a href={item.link} target='_Blank'>
-                                        <div className="flex gap-4 items-center flex-col">
+                                        <div className="flex gap-4 items-center flex-col ">
                                             <div className="flex-none w-24 h-24">
                                                 <img
                                                     src={item.img}
@@ -82,6 +83,41 @@ function Partners() {
                                             <div>
                                                 <h4 className="text-gray-700 font-semibold sm:text-lg text-center">{item.title}</h4>
                                                 <p className="text-gray-500 text-justify">{item.description}</p>
+                                            </div>
+                                            <div className="w-full">
+                                                <div
+                                                    className="visit"
+                                                    style={{ '--clr': '#5c5c5c' }}
+                                                >
+                                                    <span className="visit__icon-wrapper">
+                                                        <svg
+                                                            viewBox="0 0 14 15"
+                                                            fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            className="visit__icon-svg"
+                                                            width="7"
+                                                        >
+                                                            <path
+                                                                d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                                                                fill="currentColor"
+                                                            />
+                                                        </svg>
+
+                                                        <svg
+                                                            viewBox="0 0 14 15"
+                                                            fill="none"
+                                                            width="7"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            className="visit__icon-svg visit__icon-svg--copy"
+                                                        >
+                                                            <path
+                                                                d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                                                                fill="currentColor"
+                                                            />
+                                                        </svg>
+                                                    </span>
+                                                    Visit Website
+                                                </div>
                                             </div>
                                         </div>
                                     </a>

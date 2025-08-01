@@ -33,13 +33,12 @@ function Footer() {
                 Contact Us
               </h3>
               <li>
-                <a
-                  href="#"
+                <div
                   className="flex items-center gap-4 text-lg duration-150 hover:text-gray-50 hover:scale-103"
                 >
                   <IoMdMail className="rounded-md text-xl text-white" />{" "}
                   <span><a href="mailto:ousec.drrcc@dost.gov.ph">ousec.drrcc@dost.gov.ph</a></span>
-                </a>
+                </div>
               </li>
             </ul>
           </div>
@@ -55,6 +54,7 @@ function Footer() {
           <div className=" items-center justify-between flex md:flex-row flex-col w-full md:gap-4">
             <p className="text-gray-100 md:text-base text-sm text-center md:text-start">Copyright © 2025 Handa Pilipinas - All rights reserved.</p>
             <div className="flex items-center gap-x-6 text-gray-400 mt-6">
+              
               <a href="https://www.facebook.com/DOSTph/" target="_Blank">
                 <FaFacebook className="text-3xl text-blue-500 bg-gray-100 rounded-full hover:scale-125 duration-200" />
               </a>
