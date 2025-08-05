@@ -15,6 +15,7 @@ import Contacts from "../pages/Contacts/Contacts";
 import PoliciesAndLaws from "../pages/PoliciesLaws/PoliciesAndLaws";
 import LearningMaterials from "../pages/LearningMaterials/LearningMaterials";
 import DRRStats from "../pages/DRRStats/DRRStats";
+import Photos from "../pages/PhotosPage/Photos";
 
 export const router = createBrowserRouter([
   {
@@ -32,6 +33,7 @@ export const router = createBrowserRouter([
       { path: "/speeches", element: <Speeches /> },
       { path: "/archives", element: <Archives /> },
       { path: "/photos", element: <PhotoAlbum /> },
+      { path: "/view-images/:slug", element: <Photos /> },
       { path: "/contacts", element: <Contacts /> },
       { path: "/policies-and-laws", element: <PoliciesAndLaws /> },
       { path: "/learning-materials", element: <LearningMaterials /> },

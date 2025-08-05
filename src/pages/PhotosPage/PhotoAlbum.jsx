@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
@@ -8,7 +8,7 @@ import { album } from '../Data/album';
 import { formatDateLong } from "../../hooks/dateFormatter"
 import { IoMdImages } from "react-icons/io";
 import Framer from '../../components/Framer';
-
+import { Link } from 'react-router-dom';
 function PhotoAlbum() {
     const [slidesPerView, setSlidesPerView] = useState(null);
     const [activeIndex, setActiveIndex] = useState(0);
@@ -62,30 +62,31 @@ function PhotoAlbum() {
                 >
                     {album.map((item, i) => (
                         <SwiperSlide key={i}>
-                            <div className="group relative h-80 overflow-hidden rounded-lg  flex items-center justify-center shadow-lg">
-                                <div
-                                    className="absolute inset-0 bg-cover bg-center transition-transform duration-400 group-hover:scale-105"
-                                    style={{ backgroundImage: `url('/images/gallery/${item.slug_album}/${item.highlight_img}')` }}
-                                ></div>
-                                <div className={`absolute inset-0 z-0 bg-red-500/60 transition-all duration-500  ${activeIndex !== i ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}></div>
-                                <div className={`inset-0 z-20  w-full py-2 px-10  ${activeIndex === i ? 'opacity-0' : 'opacity-100 pointer-events-none'}`}>
-                                    <p className='montserrat-bold text-center text-lg text-gray-50 '>
-                                        {item.title}
-                                    </p>
-                                    <p className='montserrat-regular text-center text-sm text-gray-200'>
-                                        {formatDateLong(item.date)}
-                                    </p>
-                                </div>
+                            <Link to={`/view-images/${item.slug_album}`}>
+                                <div className="group relative h-80 overflow-hidden rounded-lg  flex items-center justify-center shadow-lg">
+                                    <div
+                                        className="absolute inset-0 bg-cover bg-center transition-transform duration-400 group-hover:scale-105"
+                                        style={{ backgroundImage: `url('/images/gallery/${item.slug_album}/${item.highlight_img}')` }}
+                                    ></div>
+                                    <div className={`absolute inset-0 z-0 bg-red-500/60 transition-all duration-500  ${activeIndex !== i ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}></div>
+                                    <div className={`inset-0 z-20  w-full py-2 px-10  ${activeIndex === i ? 'opacity-0' : 'opacity-100 pointer-events-none'}`}>
+                                        <p className='montserrat-bold text-center text-lg text-gray-50 '>
+                                            {item.title}
+                                        </p>
+                                        <p className='montserrat-regular text-center text-sm text-gray-200'>
+                                            {formatDateLong(item.date)}
+                                        </p>
+                                    </div>
 
-                                <div className={`
+                                    <div className={`
                                      w-fit flex items-center z-40 absolute bottom-0 left-0 text-xs bg-slate-800/80 px-2 py-1 text-white rounded-tr-lg
                                     transition-all duration-500 ease-in-out montserrat-bold 
                                     ${activeIndex === i ? 'opacity-100' : 'opacity-0 pointer-events-none'}
                                 `}>
-                                    <IoMdImages className='text-xl mr-2' /> View <span className='text-base px-1 text-red-500'> {item.numbers} </span> more images
+                                        <IoMdImages className='text-xl mr-2' /> View <span className='text-base px-1 text-red-500'> {item.numbers} </span> more images
+                                    </div>
                                 </div>
-
-                            </div>
+                            </Link>
                             <div
                                 className={`
                                      w-full pt-5
