@@ -7,7 +7,7 @@ import { formatDateShort } from "../../../hooks/dateFormatter";
 
 function ArticlesList({ latest = [] }) {
   return (
-    <section className="space-y-1 px-8 md:py-4 py-0 text-gray-800 md:px-2 md:pb-5">
+    <section className="space-y-1 px-8 py-0 text-gray-800 md:px-2 md:pb-5">
       <div className="w-full border-b border-gray-400 pb-3">
         <h4 className="montserrat-bold flex items-center gap-x-2 text-lg font-extrabold">
           <IoNewspaperOutline className="text-2xl" />
@@ -16,7 +16,7 @@ function ArticlesList({ latest = [] }) {
       </div>
       {
         latest.slice(0, 4).map((item, i) => (
-          <Link to={`/view-article/${slugText(item.title)}`} key={i} >
+          <Link to={`/view-article/${slugText(item.slug)}`} key={i} >
             <div className="flex w-full gap-4 border-b border-gray-400 py-3 duration-300 hover:scale-[1.03]">
               <div className="aspect-square w-[100px] flex-shrink-0 overflow-hidden rounded-md shadow-lg">
                 <img

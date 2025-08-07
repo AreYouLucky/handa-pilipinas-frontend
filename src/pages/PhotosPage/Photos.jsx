@@ -7,6 +7,7 @@ import Thumbnails from 'yet-another-react-lightbox/plugins/thumbnails';
 import 'yet-another-react-lightbox/plugins/thumbnails.css';
 import { images } from '../Data/images';
 import { album } from '../Data/album';
+import { formatDateLong } from '../../hooks/dateFormatter';
 
 import Zoom from 'yet-another-react-lightbox/plugins/zoom';
 
@@ -33,7 +34,7 @@ function Photos() {
     }));
 
     useEffect(() => {
-        const currentAlbum = album.filter(item => item.slug_album === slug);
+        const currentAlbum = album.find(item => item.slug_album === slug);
         setCurrentAlbum(currentAlbum);
         const imagesFiltered = images.filter(item => item.src === slug);
         setImageList(imagesFiltered)
@@ -46,7 +47,13 @@ function Photos() {
             <div className="m-auto w-full max-w-screen-2xl md:pb-10 md:pt-5 px-5">
                 <Framer animation='fade-up'>
                     <h1 className="text-center montserrat-bold text-2xl p-5 border rounded-lg">
-                        Photos
+                        {currentAlbum.title}
+                        <p className='montserrat-regular text-center text-[14px] mt-1 text-gray-700'>
+                            {currentAlbum.description}
+                        </p>
+                        <p className='montserrat-regular text-center text-[12px] text-gray-600'>
+                            {formatDateLong(currentAlbum.date)}
+                        </p>
                     </h1>
                 </Framer>
                 <Framer animation='fade-right'>

@@ -77,7 +77,7 @@ function Navbar() {
             </li>
 
             {/* RESOURCES Dropdown */}
-            <li>
+            {/* <li>
               <button
                 onClick={() => setIsResourcesOpen(!isResourcesOpen)}
                 className="w-full flex items-center justify-between p-2"
@@ -103,7 +103,7 @@ function Navbar() {
                   ))}
                 </ul>
               )}
-            </li>
+            </li> */}
 
             {/* MEDIA Dropdown */}
             <li>
@@ -119,7 +119,7 @@ function Navbar() {
               </button>
               {isDropdownOpen && (
                 <ul className="pl-4 mt-2 space-y-1">
-                  {["press-release", "speeches", "archives", "photos", "videos"].map((route) => (
+                  {["press-release",  "archives", "photos", "videos"].map((route) => (
                     <li key={route} className={url === `/${route}` ? 'bg-gray-200 rounded-md' : ''}>
                       <Link to={`/${route}`} className={`block p-2 ${navigation_text} pl-4 capitalize`}>
                         {route.replace("-", " ")}

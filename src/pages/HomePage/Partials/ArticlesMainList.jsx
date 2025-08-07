@@ -22,16 +22,17 @@ function ArticlesMainList({ articles = [] }) {
                 otherArticles.push(item);
             }
         });
+        otherArticles.sort((a, b) => new Date(b.date_published) - new Date(a.date_published));
         setHighlight(highlights);
         setLatest(otherArticles);
     }, [articles]);
 
     return (
         <section className="md:py-5 py-3">
-            <div className="max-w-screen-2xl mx-auto md:py-12 py-0 md:pb-1 text-gray-50 grid md:grid-cols-3 md:gap-x-20">
+            <div className="max-w-screen-2xl mx-auto md:py-12 py-0 md:pb-1 text-gray-50 grid md:grid-cols-3 md:gap-x-10">
                 <div className="relative group overflow-hidden rounded-xl md:col-span-2 flex items-center md:pr-10 p-5 md:p-0">
                     <div className="relative flex-none w-full text-gray-700 z-10 ">
-                        <div className="group relative h-[200px] overflow-hidden rounded-xl border border-gray-400 md:h-[450px] md:p-5 p-2">
+                        <div className="group relative h-[200px] overflow-hidden rounded-xl border border-gray-400 md:h-[480px] md:p-5 p-2">
                             <div
                                 className="absolute inset-0 bg-cover bg-center transition-transform duration-400 group-hover:scale-105"
                                 style={{
@@ -55,7 +56,7 @@ function ArticlesMainList({ articles = [] }) {
                             </p>
 
                             <div className="flex items-center gap-x-3 sm:text-sm">
-                                <Link to={`/view-article/${slugText(highlight.title)}`}>
+                                <Link to={`/view-article/${slugText(highlight.slug)}`}>
                                     <span className="flex items-center justify-center gap-x-1 py-2 px-4 text-white font-medium bg-[#262626] duration-150 hover:bg-gray-900 rounded-full md:inline-flex montserrat-bold border border-white text-base cursor-pointer">
                                         Read Article
                                         <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
@@ -71,7 +72,7 @@ function ArticlesMainList({ articles = [] }) {
                         </div>
                     </div>
                 </div>
-                <div className="w-full block md:hidden border-b md:my-5 my-2"></div>
+                <div className="w-full block md:hidden border-b md:my-2 my-2"></div>
                 <div>
                     <Framer animation="fade-up">
                         <ArticlesList latest={latest}></ArticlesList>

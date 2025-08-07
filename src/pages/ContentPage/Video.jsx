@@ -16,19 +16,34 @@ function Video() {
   const [video, setVideo] = useState({});
   const [otherVideos, setOthersVideos] = useState([]);
 
+  const fbVideoUrl = video.youtube_url;
+  const encodedUrl = encodeURIComponent(fbVideoUrl);
+
+  const iframeHtml = `
+  <iframe 
+    src="https://www.facebook.com/plugins/video.php?href=${encodedUrl}&show_text=false&width=500" 
+    height="520"
+    style="border:none;overflow:hidden" 
+    scrolling="no" 
+    frameborder="0" 
+    allowfullscreen="true" 
+    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+  </iframe>
+`;
+
   useEffect(() => {
     if (!slug) return;
 
     const other = [];
     const normalizedTitle = title.toLowerCase();
     data.forEach(item => {
-      if (item.title.toLowerCase() === normalizedTitle) {
+      if (item.slug.toLowerCase() === normalizedTitle) {
         setVideo(item);
       } else if (item.file_type === 2) {
         other.push(item);
       }
     });
-
+    other.sort((a, b) => new Date(b.date_published) - new Date(a.date_published));
     setOthersVideos(other);
   }, [slug, title]);
   return (
@@ -36,16 +51,32 @@ function Video() {
       <div className="w-full">
         <div className="m-auto w-full max-w-screen-2xl md:py-12 py-6 px-5">
           <Framer animation="fade-up">
-            <div className="w-full aspect-video">
-              <iframe
-                className="w-full h-full border-1 border-gray-500 rounded-lg"
-                src={video.youtube_url}
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
-              ></iframe>
+            <div className="w-full justify-center flex rounded-lg bg-gray-800">
+              {video.material_type === 'Reels' ? (
+                <div dangerouslySetInnerHTML={{ __html: iframeHtml }} />
+              ) : video.material_type === 'Watch' ? (
+                <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, width: '100%' }}>
+                  <iframe
+                    src={`https://www.facebook.com/plugins/video.php?href=${encodedUrl}&show_text=false`}
+                    style={{
+                      position: 'absolute',
+                      top: 0,
+                      left: 0,
+                      width: '100%',
+                      height: '100%',
+                      border: 'none',
+                      overflow: 'hidden'
+                    }}
+                    scrolling="no"
+                    frameBorder="0"
+                    allowFullScreen
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                    title="Facebook Video"
+                  />
+                </div>
+              ) : null}
             </div>
+
             <div className="w-full">
               <p className="montserrat-bold space-y-[-10px] text-xl leading-tight text-gray-800 md:text-2xl mt-4">
                 {video.title}
@@ -57,7 +88,7 @@ function Video() {
               <p className="montserrat-regular mb-4 text-justify text-base text-gray-500">
                 {video.content}
               </p>
-              <ShareLink article={video}/>
+              {/* <ShareLink article={video} /> */}
             </div>
           </Framer>
 

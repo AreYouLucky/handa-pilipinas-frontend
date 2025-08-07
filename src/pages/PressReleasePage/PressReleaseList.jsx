@@ -21,6 +21,7 @@ function PressReleaseList() {
                 other.push(item);
             }
         });
+        other.sort((a, b) => new Date(b.date_published) - new Date(a.date_published));
 
         setLatest(other);
     }, []);
@@ -59,7 +60,7 @@ function PressReleaseList() {
                                         </p>
 
                                         <div className="flex items-center gap-x-3 sm:text-sm">
-                                            <Link to={`/view-article/${slugText(highlight.title)}`}>
+                                            <Link to={`/view-article/${slugText(highlight.slug)}`}>
                                                 <span className="flex items-center justify-center gap-x-1 py-2 px-4 text-white font-medium bg-[#262626] duration-150 hover:bg-gray-900 rounded-full md:inline-flex montserrat-bold border border-white text-base cursor-pointer">
                                                     Read Article
                                                     <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
@@ -86,7 +87,7 @@ function PressReleaseList() {
                                 </div>
                                 {
                                     latest.slice(0, 5).map((item, i) => (
-                                        <Link to={`/view-article/${slugText(item.title)}`} key={i} >
+                                        <Link to={`/view-article/${slugText(item.slug)}`} key={i} >
                                             <div className="flex w-full gap-4 border-b border-gray-400 py-3 duration-300 hover:scale-[1.03]">
                                                 <div className="aspect-square w-[100px] flex-shrink-0 overflow-hidden rounded-md shadow-lg">
                                                     <img
@@ -123,7 +124,7 @@ function PressReleaseList() {
                                 <div className="grid md:grid-cols-4 grid-cols-2 gap-4 md:gap-8 montserrat-regular">
                                     {
                                         latest.slice(4).map((item, i) => (
-                                            <Link to={`/view-article/${slugText(item.title)}`} key={i}>
+                                            <Link to={`/view-article/${slugText(item.slug)}`} key={i}>
                                                 <article className="w-full">
                                                     <div className="relative h-[100px] w-full flex-shrink-0 overflow-hidden rounded-md border border-gray-400 shadow-lg md:h-[200px]">
                                                         <img

@@ -1,83 +1,14 @@
 export const data = [
 
-    //For videos file type 2 iframed using youtube urls, For Article just provide headline banner and file type 1
-    //Videos
-    {
-        id: 1,
-        title: 'Handa Pilipinas sa Congress',
-        filename: 'REELS-Handa Pilipinas sa Congress.mp4',
-        file_type: 2,
-        material_type: 'Video',
-        youtube_url: 'https://www.youtube.com/embed/Cp1CPE-KIgs?si=7KUAWQ34hLP1sZWG',
-        thumbnail: 'REELS-Handa Pilipinas sa Congress.png',
-        content: "",
-        excerpt: 'The government remains committed to advancing our country’s disaster resilience,” declared President Ferdinand R. Marcos Jr. as he led the Department of Science and Technology’s (DOST) launching...',
-        archive_year: 2025,
-        is_featured: 0,
-        date_published: '2025-06-05'
-    },
-    {
-        id: 2,
-        title: 'Handa Pilipinas Senate',
-        filename: 'REELS-Handa Pilipinas-Senate.mp4',
-        file_type: 2,
-        material_type: 'Video',
-        thumbnail: 'REELS-Handa Pilipinas-Senate.png',
-        youtube_url: 'https://www.youtube.com/embed/Cp1CPE-KIgs?si=7KUAWQ34hLP1sZWG',
-        content: 'The government remains committed to advancing our country’s disaster resilience,” declared President Ferdinand R. Marcos Jr. as he led the Department of Science and Technology’s (DOST) launching...',
-        excerpt: 'The government remains committed to advancing our country’s disaster resilience,” declared President Ferdinand R. Marcos Jr. as he led the Department of Science and Technology’s (DOST) launching...',
-        archive_year: 2025,
-        is_featured: 0,
-        date_published: '2025-06-05'
-    },
-    {
-        id: 3,
-        title: 'Handa Pilipinas Mindanao',
-        filename: 'REELS-Handa Pilipinas-Mindanao.mp4',
-        file_type: 2,
-        material_type: 'Video',
-        thumbnail: 'REELS-Handa Pilipinas-Mindanao.png',
-        youtube_url: 'https://www.youtube.com/embed/Cp1CPE-KIgs?si=7KUAWQ34hLP1sZWG',
-        content: 'The government remains committed to advancing our country’s disaster resilience,” declared President Ferdinand R. Marcos Jr. as he led the Department of Science and Technology’s (DOST) launching...',
-        excerpt: 'The government remains committed to advancing our country’s disaster resilience,” declared President Ferdinand R. Marcos Jr. as he led the Department of Science and Technology’s (DOST) launching...',
-        archive_year: 2025,
-        is_featured: 0,
-        date_published: '2025-06-05'
-    },
-    {
-        id: 4,
-        title: 'Handa Pilipinas for posting',
-        filename: 'HandaPilipinas for posting.mp4',
-        file_type: 2,
-        material_type: 'Video',
-        thumbnail: 'HandaPilipinas for posting.png',
-        youtube_url: 'https://www.youtube.com/embed/Cp1CPE-KIgs?si=7KUAWQ34hLP1sZWG',
-        content: 'The government remains committed to advancing our country’s disaster resilience,” declared President Ferdinand R. Marcos Jr. as he led the Department of Science and Technology’s (DOST) launching...',
-        excerpt: 'The government remains committed to advancing our country’s disaster resilience,” declared President Ferdinand R. Marcos Jr. as he led the Department of Science and Technology’s (DOST) launching...',
-        archive_year: 2025,
-        is_featured: 1,
-        date_published: '2025-06-05'
-    },
-    {
-        id: 5,
-        title: 'Highlights of Handa Pilipinas NCR',
-        filename: 'Highlights of Handa Pilipinas -NCR.mp4',
-        file_type: 2,
-        material_type: 'Video',
-        thumbnail: 'Highlights of Handa Pilipinas -NCR.png',
-        youtube_url: 'https://www.youtube.com/embed/Cp1CPE-KIgs?si=7KUAWQ34hLP1sZWG',
-        content: 'The government remains committed to advancing our country’s disaster resilience,” declared President Ferdinand R. Marcos Jr. as he led the Department of Science and Technology’s (DOST) launching...',
-        excerpt: 'The government remains committed to advancing our country’s disaster resilience,” declared President Ferdinand R. Marcos Jr. as he led the Department of Science and Technology’s (DOST) launching...',
-        archive_year: 2025,
-        is_featured: 0,
-        date_published: '2025-06-05'
-    },
+
+
 
 
     //Articles
     {
         id: 6,
         title: 'Science chief wants Filipinos to transform from disaster victims to victors through innovation',
+        slug: 'Science chief wants Filipinos to transform from disaster victims to victors through innovation',
         filename: '',
         file_type: 1,
         material_type: 'Article',
@@ -337,11 +268,12 @@ export const data = [
         excerpt: 'Department of Science and Technology Secretary Renato U. Solidum Jr. stresses the importance of preparedness through proper information to prevent natural hazards from becoming disasters, during the opening ceremonies of the 2023 Handa Pilipinas Exposition-Mindanao Leg held in Cagayan de Oro City on 04 October 2023.   ',
         archive_year: 2025,
         is_featured: 0,
-        date_published: '2025-10-24'
+        date_published: '2023-10-04'
     },
     {
         id: 7,
         title: 'PBBM kicks off Handa Pilipinas 2023 Visayas Leg on Supertyphoon Yolandas 10th anniversary',
+        slug: 'PBBM kicks off Handa Pilipinas 2023 Visayas Leg on Supertyphoon Yolandas 10th anniversary',
         filename: '',
         file_type: 1,
         material_type: 'Article',
@@ -500,12 +432,13 @@ export const data = [
         `,
         excerpt: 'President Ferdinand “Bongbong” R. Marcos, Jr., together with DOST Sec. Renato U. Solidum Jr. (right, foreground), inspects various technologies and innovations laid out during the Opening Ceremony of the Handa Pilipinas 2023 Visayas Leg on November 8, 2023 at the Summit Hotel in Tacloban City, Leyte. (Screenshot from RTV Malacañang Youtube channel)',
         archive_year: 2025,
-        is_featured: 1,
-        date_published: '2023-11-23'
+        is_featured: 0,
+        date_published: '2023-11-08'
     },
     {
         id: 8,
         title: 'Ready for adoption Pinoy Made tech on disaster risk reduction at Handa Pilipinas Expo 2023',
+        slug: 'Ready for adoption Pinoy Made tech on disaster risk reduction at Handa Pilipinas Expo 2023',
         filename: '',
         file_type: 1,
         material_type: 'Article',
@@ -816,11 +749,12 @@ export const data = [
         excerpt: 'DOST Secretary Renato U. Solidum Jr. gives Senator Alan Peter S. Cayetano and Department of Interior and Local Government (DILG) Secretary Benhur Abalos Jr. an overview on the technologies exhibited in the three-day exposition of Handa Pilipinas 2023 at the World Trade Center in Pasay City. ',
         archive_year: 2025,
         is_featured: 0,
-        date_published: '2025-10-24'
+        date_published: '2023-07-29'
     },
     {
         id: 9,
         title: 'DOST and the Legislature are working together on enabling policies on disaster risk reduction',
+        slug: 'DOST and the Legislature are working together on enabling policies on disaster risk reduction',
         filename: '',
         file_type: 1,
         material_type: 'Article',
@@ -1013,17 +947,18 @@ export const data = [
         excerpt: 'The Department of Science and Technology (DOST) convened a high-level forum and a three-day exhibit of the 2024 Handa Pilipinas in the Philippine Congress, a disaster risk reduction campaign of the department. The event took place at the South Wing Annex, House of Representatives in Quezon City, Metro Manila, on January 22-24, 2024.',
         archive_year: 2025,
         is_featured: 0,
-        date_published: '2024-1-24'
+        date_published: '2024-01-24'
     },
     {
         id: 10,
         title: 'DOST stresses key elements to disaster resilience in the 2024 Handa Pilipinas',
+        slug: 'DOST stresses key elements to disaster resilience in the 2024 Handa Pilipinas',
         filename: '',
         file_type: 1,
         material_type: 'Article',
         youtube_url: '',
         thumbnail: 'DOST stresses key elements to disaster resilience in the 2024 Handa Pilipinas.jpg',
-        content:`<p class="MsoNormal" style="text-align:justify"><b><span style="font-size:16.0pt;
+        content: `<p class="MsoNormal mb-4" style="text-align:justify"><b><span style="font-size:16.0pt;
             line-height:115%;font-family:&quot;Arial&quot;,sans-serif">DOST stresses key elements to
             disaster resilience in the 2024 Handa Pilipinas <o:p></o:p></span></b></p>
 
@@ -1032,29 +967,26 @@ export const data = [
                                 src="/images/articles/DOST stresses key elements to disaster resilience in the 2024 Handa Pilipinas.jpg"
                                 name="image3.png" align="bottom" width="100%" height="100%" border="0" />
 
-            <p class="MsoNormal" style="text-align:justify"><span style="font-size:10.0pt;
+            <p class="MsoNormal mb-4" style="text-align:justify"><span style="font-size:10.0pt;
             line-height:115%;font-family:&quot;Arial&quot;,sans-serif">DOST Secretary Renato U.
             Solidum Jr. said that the country should level up its disaster preparations to
             include complex, multi-hazard disasters scenarios in its plans and
             preparations. <b><i>(Photo courtesy of journal.com.ph)</i></b> <o:p></o:p></span></p>
 
-            <p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
-            line-height:115%;font-family:&quot;Arial&quot;,sans-serif"><o:p>&nbsp;</o:p></span></p>
-
-            <p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+            <p class="MsoNormal mb-6" style="text-align:justify"><span style="font-size:12.0pt;
             line-height:115%;font-family:&quot;Arial&quot;,sans-serif">“Does survival imply
             resilience?” This was posted by Department of Science and Technology (DOST)
             secretary Renato U. Solidum Jr. during the opening ceremony of the 2024 Handa
             Pilipinas: Innovations in Disaster Resilience Luzon Leg held on 3 July 2024 at
             the Plaza Del Norte Hotel and Convention Center, Laoag City, Ilocos Norte.<o:p></o:p></span></p>
 
-            <p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+            <p class="MsoNormal mb-6" style="text-align:justify"><span style="font-size:12.0pt;
             line-height:115%;font-family:&quot;Arial&quot;,sans-serif">Solidum emphasizes that
             Filipinos have always been portrayed as resilient during disasters as
             characterized by having pleasant disposition in the face of hazards but that
             does that really mean resiliency?<o:p></o:p></span></p>
 
-            <p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+            <p class="MsoNormal mb-6" style="text-align:justify"><span style="font-size:12.0pt;
             line-height:115%;font-family:&quot;Arial&quot;,sans-serif">The Philippines is prone to
             various hazards as Region I alone, is prone to the passage of tropical cyclones
             and floods. Solidum explained that the region is also exposed to strong
@@ -1062,19 +994,19 @@ export const data = [
             Currimao show ladderlike hill embankments suggesting that major earthquakes had
             occurred some three to four times in the past years.<o:p></o:p></span></p>
 
-            <p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+            <p class="MsoNormal mb-6" style="text-align:justify"><span style="font-size:12.0pt;
             line-height:115%;font-family:&quot;Arial&quot;,sans-serif">“We want to express our
             aspiration to become a community, a region, a country that is ready and
             prepared against hazards,” declared Solidum. He added that through this
             exposition, the public awareness towards knowledge in natural hazards and the
             latest technologies is heightened.<o:p></o:p></span></p>
 
-            <p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+            <p class="MsoNormal mb-6" style="text-align:justify"><span style="font-size:12.0pt;
             line-height:115%;font-family:&quot;Arial&quot;,sans-serif">Solidum also shared that the key
             to building climate and disaster resilience is to redefine the Filipino context
             of resilience. <o:p></o:p></span></p>
 
-            <p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+            <p class="MsoNormal mb-6" style="text-align:justify"><span style="font-size:12.0pt;
             line-height:115%;font-family:&quot;Arial&quot;,sans-serif">In most cases, he said,
             Filipinos are portrayed smiling after any disaster. “<i>Mahilig magpapicture
             ang mga Filipino kahit mayroong baha pero nakangiti pa rin</i>.” He said that
@@ -1082,39 +1014,39 @@ export const data = [
             are a deterrent to achieving resiliency as this leads to lowering the standards
             for the quality of life that we are supposed to have. <o:p></o:p></span></p>
 
-            <p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+            <p class="MsoNormal mb-6" style="text-align:justify"><span style="font-size:12.0pt;
             line-height:115%;font-family:&quot;Arial&quot;,sans-serif">Additionally, he said that the
             frequent exposure to hazards in the Philippines suggests that we should
             transform the Filipino mindset and culture of resilience. Resilience should
             allow the Filipinos to adopt, resist, transform, and recover from the effects
             of the hazard in a timely and efficient manner.<o:p></o:p></span></p>
 
-            <p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+            <p class="MsoNormal mb-6" style="text-align:justify"><span style="font-size:12.0pt;
             line-height:115%;font-family:&quot;Arial&quot;,sans-serif">“Resilience is moving beyond
             merely surviving the impacts of disasters,” stressed Solidum. “But instead
             making resilience a way of life, embedded in our households, schools,
             communities, businesses, economy, and governance.”<span style="mso-spacerun:yes">&nbsp;&nbsp; </span><o:p></o:p></span></p>
 
-            <p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+            <p class="MsoNormal mb-6" style="text-align:justify"><span style="font-size:12.0pt;
             line-height:115%;font-family:&quot;Arial&quot;,sans-serif">He also shared the three
             important goals that should guide the government in achieving resiliency which
             are to reduce the various risks prior to hazard occurrence which is to
             strengthen the houses that we build, locate to a safer area, and make sure that
             structures are usable before and after the hazards. <o:p></o:p></span></p>
 
-            <p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+            <p class="MsoNormal mb-6" style="text-align:justify"><span style="font-size:12.0pt;
             line-height:115%;font-family:&quot;Arial&quot;,sans-serif">He stressed the need to ensure
             evidence-based local land-use plans, local development plans, investing in
             infrastructure resilience and ensuring resilient businesses and economy.<o:p></o:p></span></p>
 
-            <p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+            <p class="MsoNormal mb-6" style="text-align:justify"><span style="font-size:12.0pt;
             line-height:115%;font-family:&quot;Arial&quot;,sans-serif">Efficient response to hazards
             is equally important. He explained that we need to prepare so we can respond
             faster and effectively. He emphasized the need for preparedness to respond to
             lessen the loss of life by making sure that the recovery and medical aspects
             during emergency responses are efficiently carried out.<o:p></o:p></span></p>
 
-            <p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+            <p class="MsoNormal mb-6" style="text-align:justify"><span style="font-size:12.0pt;
             line-height:115%;font-family:&quot;Arial&quot;,sans-serif">Lastly, we need to improve
             managing complex worst-case scenarios while ensuring interoperability among key
             stakeholders. “Our earthquake drills are done without the assumption that a
@@ -1123,13 +1055,13 @@ export const data = [
             Pinatubo eruption in 1991. He said that all these compounding hazards must be
             part of the simulation scenario to prepare for big events.<o:p></o:p></span></p>
 
-            <p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+            <p class="MsoNormal mb-6" style="text-align:justify"><span style="font-size:12.0pt;
             line-height:115%;font-family:&quot;Arial&quot;,sans-serif">“<i>Handa na po ang Pilipinas
             sa maliliit na trahedya. Local government kayang-kaya,” he said. </i>“But we
             are not prepared for large-scale events. We are there preparing but we still
             need to do more, that is why we have (Handa Pilipinas) campaign.<o:p></o:p></span></p>
 
-            <p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+            <p class="MsoNormal mb-6" style="text-align:justify"><span style="font-size:12.0pt;
             line-height:115%;font-family:&quot;Arial&quot;,sans-serif">Handa Pilipinas: Innovations
             in Disaster Resilience is a disaster risk reduction and resiliency campaign
             initiative to help spread public awareness and knowledge towards disaster
@@ -1138,7 +1070,7 @@ export const data = [
             disaster mitigation, the expo also presents several locally developed and
             market-ready technologies for disaster preparedness, response, and recovery.<span style="mso-spacerun:yes">&nbsp; </span><o:p></o:p></span></p>
 
-            <p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+            <p class="MsoNormal mb-6" style="text-align:justify"><span style="font-size:12.0pt;
             line-height:115%;font-family:&quot;Arial&quot;,sans-serif">The exposition is open to the
             public and runs from July 3-5, 2024. (30)<o:p></o:p></span></p>
 
@@ -1146,7 +1078,304 @@ export const data = [
         excerpt: 'DOST Secretary Renato U. Solidum Jr. said that the country should level up its disaster preparations to include complex, multi-hazard disasters scenarios in its plans and preparations. ',
         archive_year: 2025,
         is_featured: 0,
-        date_published: '2025-10-24'
+        date_published: '2024-07-03'
     },
+
+    {
+        id: 10,
+        title: 'Handa Pilipinas, a pivot to proactive disaster management',
+        slug: 'Handa Pilipinas a pivot to proactive disaster management',
+        filename: '',
+        file_type: 1,
+        material_type: 'Article',
+        youtube_url: '',
+        thumbnail: 'handa.png',
+        content: `<p  class=" text-2xl "style="  margin-bottom: 6pt; color: black; font-weight: bold;">
+  Handa Pilipinas, a pivot to proactive disaster management
+</p>
+
+<p style="font-size: 16px;  text-align: justify;">
+  <em>By Kesha Shua V. Leosala, DOST-STII</em>
+</p>
+
+<img src="/images/articles/handa.png" alt="Handa Pilipinas" style="width: 100%; height: auto; margin: 12pt 0;" />
+
+<p style="font-size: 16px;  text-align: justify;" class="mb-4">
+  Only half a year in, and we have already experienced earthquakes, volcanic eruptions, and flooding. While this is not something new, the impact of disasters has significantly intensified—mainly due to climate change.
+</p>
+
+<p style="font-size: 16px;  text-align: justify;" class="mb-4">
+  Just last year, we witnessed six tropical cyclones—ranging from severe tropical storms to super typhoons—enter the Philippine Area of Responsibility (PAR) in a single month. The World Risk Index 2024 reports the Philippines as the country with the highest risk, citing its exposure to natural events such as typhoons, flooding, and earthquakes, among others.
+</p>
+
+<p style="font-size: 16px;  text-align: justify;" class="mb-4">
+  It is tempting to call this euphemism resilience every time our country absorbs losses after a disaster. Yet, year after year, and hundreds of typhoons, volcanic eruptions, earthquakes, and other kinds of disasters have passed, we as a nation, are still vulnerable and often caught unprepared for these geological and hydrometeorological events. These events have averted what economic gains we have achieved in the past.
+</p>
+
+<p style="font-size: 16px;  text-align: justify;" class="mb-4">
+  This is not resilience. We are merely surviving. Because resilience shouldn’t mean accepting disasters as normal occurrence and controls over its impacts are nowhere to be found; Resilience should mean our collective ability to recover from setbacks by being equipped and prepared for any disaster that comes our way.
+</p>
+
+<p style="font-size: 16px;  text-align: justify;" class="mb-4">
+  The truth is, while resilience sounds admirable, it often conceals a more uncomfortable reality. It can become a form of learned helplessness for those who see resilience as an endless vicious cycle of reliance to a broken system that neither protects nor saves but only maintains the status quo. A system that thrives on patronage.
+</p>
+
+<p style="font-size: 16px;  text-align: justify;" class="mb-4">
+  According to reports, over 10 million individuals (2.56 million families) were affected by the combined effects of the six tropical cyclones last year, namely: Trami/Kristine, Kong-Rey/Leon, Yinxing/Marce, Toraji/Nika, Usagi/Ofel, and Man-yi/Pepito. This is what so-called <em>resilience</em> looks like on the ground—an exhausting cycle of surviving, with little to no time for rebuilding, and bracing for the next one.
+</p>
+
+<p style="font-size: 16px;  text-align: justify;" class="mb-4">
+  This reality was acknowledged by DOST Secretary Renato Solidum Jr., who redefined resilience in the Filipino context—challenging the norm of accepting the worst conditions and asserting that smiling is not an indicator of resilience but a coping mechanism.
+</p>
+
+<p style="font-size: 16px;  text-align: justify;" class="mb-4">
+  Secretary Solidum says, <em>“resilience is moving beyond merely surviving the impacts of disasters but instead making resilience a way of life—embedded in our households, schools, communities, businesses, economy, and governance.”</em>
+</p>
+
+<p style="font-size: 16px;  text-align: justify;" class="mb-4">
+  Moving beyond survival, we are now pivoting to proactive risk management, focusing on science-based preparedness programs such as the Handa Pilipinas initiated by DOST, that empowers the public to make better judgment during disasters through informed choices using science-based knowledge, information, and technology.
+</p>
+
+<p style="font-size: 16px;  text-align: justify;" class="mb-4">
+  From the word <em>handa</em>, which means “ready” or “prepared,” Handa Pilipinas is an advocacy program and exposition that showcases various products, services, and research developed and supported by DOST agencies in the areas of Disaster Risk Reduction and Management (DRRM) and Climate Change Adaptation (CCA).
+</p>
+
+<p style="font-size: 16px;  text-align: justify;" class="mb-4">
+  The program highlights science and technology-based interventions during natural disasters and health emergencies. It also helps raise public awareness and enhances disaster preparedness by giving local government units access to the latest technologies. Among the featured technologies are Early Warning Systems, GeoRisk Philippines, HazardHunterPH, and PlanSmart.
+</p>
+
+<p style="font-size: 16px;  text-align: justify;" class="mb-4">
+  Currently, the exposition is being held in three legs to cater to the regions of Luzon, Visayas, and Mindanao. Each leg has a specific focus and theme based on the natural hazards and calamity history of the region. This year, the Luzon leg will be held in Baguio City.
+</p>
+
+<p style="font-size: 16px;  text-align: justify;" class="mb-4">
+  While Handa Pilipinas is just one of the many tools we can use to prepare for disasters, it is not enough—unless there is a transformation in the national mindset, one that refuses to glorify survival and instead demands preparedness and protection.
+</p>
+
+<p style="font-size: 16px;  text-align: justify;" class="mb-4">
+  So yes, maybe we have mistaken survival for resilience—but it is our hope that programs like this won’t just be one-time events, but continuing movements.
+</p>
+
+<p style="font-size: 16px;  text-align: justify;" class="mb-4">
+  We don’t need to prove our resilience. What we need are systems that make it unnecessary to do so in the first place.
+</p>
+
+<p style="font-size: 16px;  text-align: justify;" class="mb-4">
+  If you are one with this movement, join Handa Pilipinas 2025. Visit our official website at 
+  <a href="https://dost.gov.ph" style="color:#1155CC;">dost.gov.ph</a> and follow us on Facebook at DOST Philippines to learn more!
+</p>
+ `,
+        excerpt: 'Only half a year in, and we have already experienced earthquakes, volcanic eruptions, and flooding. While this is not something new, the impact of disasters has significantly intensified—mainly ...',
+        archive_year: 2025,
+        is_featured: 1,
+        date_published: '2025-08-06'
+    },
+    {
+        id: 10,
+        title: 'DOST-CAR to Host 2025 Handa Pilipinas Luzon Leg and Regional STI Week in Baguio City',
+        slug: 'DOST CAR to Host 2025 Handa Pilipinas Luzon Leg and Regional STI Week in Baguio City',
+        filename: '',
+        file_type: 1,
+        material_type: 'Article',
+        youtube_url: '',
+        thumbnail: 'invite.jpg',
+        content: `<p><strong><span style="font-size:21px;">DOST-CAR to Host 2025 Handa Pilipinas Luzon Leg and Regional STI Week in Baguio City</span></strong></p>
+
+<img src="/images/articles/invite.jpg" alt="Invitation" width="100%" height="100%" border="0" class="my-5" />
+
+<p style="margin: 12pt 0; font-size:16px; text-align:justify;">
+  <strong>Baguio City, Philippines –</strong> The Department of Science and Technology – Cordillera Administrative Region (DOST-CAR) is set to host two major science and innovation events simultaneously from August 7 to 9, 2025, at the Newtown Plaza Hotel and SLU Navybase Campus, Baguio City: the HANDA Pilipinas sa Bagong Pilipinas Luzon Leg and the Regional Science, Technology, and Innovation Week (RSTW) in the Cordillera.
+</p>
+
+<p style="margin: 12pt 0; font-size:16px; text-align:justify;">
+  These simultaneous events emphasize the importance of science, technology, and innovation (STI) in enabling resilient, sustainable, and inclusive communities. The activities are anticipated to draw participation from the national and local governments, academic institutions, private sector, business enterprises, students, and the general public.
+</p>
+
+<p style="margin: 12pt 0; font-size:16px; text-align:justify;">
+  Handa Pilipinas sa Bagong Pilipinas is DOST’s flagship platform for promoting STI-based solutions for disaster risk reduction (DRR) and climate change adaptation (CCA). With this year’s national theme, “HANDA Pilipinas sa Bagong Pilipinas: Innovations in Climate and Disaster Resilience Nationwide Exposition,” the 2025 Luzon Leg highlights the need for early and science-based strategies to deal with natural hazards, including earthquakes, landslides, typhoons, floods, forest fires, and volcanic eruptions.
+</p>
+
+<p style="margin: 12pt 0; font-size:16px; text-align:justify;">
+  With the sub-theme “Bida ang Handa: STI for a Smart and Resilient Luzon,” it will feature:
+</p>
+
+<ul class="ml-6 list-disc text-base space-y-2" style="font-size:16px;">
+  <li>Technology exhibits</li>
+  <li>Capacity-building sessions</li>
+  <li>Disaster simulations</li>
+  <li>
+    Launching of regional initiatives, including:
+    <ul class="ml-6 list-disc mt-2 space-y-2" style="font-size:16px;">
+      <li>The Cordillera DREAM System</li>
+      <li>GeoRiskPH adoption by the Cordillera Regional Land Use Committee</li>
+      <li>
+        Turnover of the HANDA Pilipinas Local Caravan Guidebook and Exhibit Modules
+        to provincial LGUs and Baguio City
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p style="margin: 12pt 0; font-size:16px; text-align:justify;">
+  Alongside this, the RSTW in CAR 2025 will showcase local scientific achievements, innovations, and solutions in various fields such as food, textiles, and health, from different DOST Research and Development Institutes and academic partners.
+</p>
+
+<p style="margin: 12pt 0; font-size:16px; text-align:justify;">
+  Visitors can look forward to hands-on learning activities and interactive exhibits, including:
+</p>
+<ul style="margin-left: 26px;" class="list-disc">
+  <li style="font-size: 16px;">The DOST-PAGASA Mobile Planetarium</li>
+  <li style="font-size: 16px;">The DRR-themed Escape Room</li>
+  <li style="font-size: 16px;">NuLab: STEM in Motion, a mobile laboratory experience for students</li>
+</ul>
+
+<p style="margin: 12pt 0; font-size:16px; text-align:justify;">
+  Other key events include:
+</p>
+<ul style="margin-left: 26px;" class="list-disc">
+  <li style="font-size: 16px;">The launching of the Advanced Manufacturing Center in CAR</li>
+  <li style="font-size: 16px;">The PSTO-Benguet Innovation Hub</li>
+  <li style="font-size: 16px;">The Mountain Engineering Technology Turnover</li>
+</ul>
+
+<p style="margin: 12pt 0; font-size:16px; text-align:justify;">
+  Further, DOST-CAR-assisted enterprises’ products will be showcased through the DOSTCARtified Techno Bazaar.
+</p>
+
+<p style="margin: 12pt 0; font-size:16px; text-align:justify;">
+  Students will also participate in the STARBOOK Whizbee quiz competition, while MSMEs and community partners will be honored through the SETUP Praise Awards and the Best CEST Community Recognition.
+</p>
+
+<p style="margin: 12pt 0; font-size:16px; text-align:justify;">
+  Technology fora will tackle important topics such as:
+</p>
+<ul style="margin-left: 26px;" class="list-disc">
+  <li style="font-size: 16px;">Smart agriculture</li>
+  <li style="font-size: 16px;">Health technologies</li>
+  <li style="font-size: 16px;">Mountain engineering innovations</li>
+</ul>
+
+<p style="margin: 12pt 0; font-size:16px; text-align:justify;">
+  DOST-CAR invites the public, including students, teachers, researchers, entrepreneurs, and both national and local agencies, to be part of this regional celebration of science, innovation, and resilience.
+</p>
+
+<p style="margin: 12pt 0; font-size:16px; text-align:justify;">
+  The exhibits are free and open to the public. For updates and registration for the fora and other activities, participants are encouraged to follow DOST-CAR and its Provincial S&T Offices’ official Facebook pages.
+</p>
+
+            `,
+        excerpt: 'Baguio City, Philippines – The Department of Science and Technology – Cordillera Administrative Region (DOST-CAR) is set to host two major science and innovation events simultaneously from August 7 to 9, 2025 ...',
+        archive_year: 2025,
+        is_featured: 0,
+        date_published: '2025-07-16'
+    },
+
+    {
+        id: 11,
+        title: 'Handa Pilipinas Senate',
+        slug: 'Handa Pilipinas Senate',
+        filename: 'REELS-Handa Pilipinas-Senate.mp4',
+        file_type: 2,
+        material_type: 'Reels',
+        thumbnail: 'REELS-Handa Pilipinas-Senate.png',
+        youtube_url: 'https://www.facebook.com/reel/1446823329253053',
+        content: "The Department of Science and Technology (DOST) showcased its latest technologies and projects focused on Disaster Mitigation, Rehabilitation, and Recovery in the Senate of the Philippines last March 4-5, 2024. Through the Handa Pilipinas Exposition, DOST-PHIVOLCS, DOST-PAGASA, and DOST-PNRI shared their research and development projects and technical services related to disaster risk reduction management, including Geo Hazards and Weather Monitoring.",
+        excerpt: "The Department of Science and Technology (DOST) showcased its latest technologies and projects focused on Disaster Mitigation, ...",
+        archive_year: 2024,
+        is_featured: 0,
+        date_published: '2024-03-04'
+    },
+    {
+        id: 12,
+        title: 'Handa Pilipinas at General Santos City',
+        slug: 'Handa Pilipinas at General Santos City',
+        filename: 'kcc.mp4',
+        file_type: 2,
+        material_type: 'Reels',
+        thumbnail: 'REELS-Handa Pilipinas-Mindanao.png',
+        youtube_url: 'https://www.facebook.com/reel/1561848641109107',
+        content: " As the 2024 Handa Pilipinas wrapped up through Mindanao Leg, the Department of Science and Technology Secretary Renato U. Solidum Jr. shared the image of Filipino resilience he aspires to become.",
+        excerpt: " As the 2024 Handa Pilipinas wrapped up through Mindanao Leg, the Department of Science and Technology ...",
+        archive_year: 2024,
+        is_featured: 0,
+        date_published: '2024-10-04'
+    },
+    {
+        id: 13,
+        title: 'Handa Pilipinas-LUZON LEG',
+        slug: 'Handa Pilipinas LUZON LEG',
+        filename: 'kcc.mp4',
+        file_type: 2,
+        material_type: 'Watch',
+        thumbnail: 'HandaPilipinas for posting.png',
+        youtube_url: 'https://www.facebook.com/DOSTph/videos/286294497075119/',
+        content: " 𝐈𝐭’𝐬 𝐚 𝐰𝐫𝐚𝐩!🎉 Witness the successful and thrilling initiative in enhancing the country’s resiliency of the Department of Science and Technology as we close out the final leg of 2023 Handa Pilipinas: Innovations in Disaster Risk Reduction and Management. Thank you to all participants and guests of the 3-leg journey in raising awareness and showcasing the latest innovative technologies for disaster risk reduction.",
+        excerpt: " 𝐈𝐭’𝐬 𝐚 𝐰𝐫𝐚𝐩!🎉 Witness the successful and thrilling initiative in enhancing the country’s resiliency of the ...",
+        archive_year: 2023,
+        is_featured: 0,
+        date_published: '2023-11-10'
+    },
+    {
+        id: 14,
+        title: 'Handa Pilipinas-VISAYAS LEG',
+        slug: 'Handa Pilipinas VISAYAS LEG',
+        filename: 'Handa Pilipinas VISAYAS LEG',
+        file_type: 2,
+        material_type: 'Watch',
+        thumbnail: 'HandaPilipinas for posting.png',
+        youtube_url: 'https://www.facebook.com/DOSTph/videos/864436278226759/',
+        content: "Matapos ang isang dekada mula sa kaganapan ng isa sa mga pinakamalalaking kalamidad sa buong mundo, handa na ba tayo, Visayas at Tacloban?",
+        excerpt: "Matapos ang isang dekada mula sa kaganapan ng isa sa mga pinakamalalaking kalamidad sa buong mundo, ...",
+        archive_year: 2023,
+        is_featured: 0,
+        date_published: '2023-10-19'
+    },
+    {
+        id: 15,
+        title: 'Handa Pilipinas-MINDANAO LEG',
+        slug: 'Handa Pilipinas MINDANAO LEG',
+        filename: 'Handa Pilipinas MINDANAO LEG',
+        file_type: 2,
+        material_type: 'Watch',
+        thumbnail: 'HandaPilipinas for posting.png',
+        youtube_url: 'https://www.facebook.com/DOSTph/videos/783527996440565/',
+        content: "CHECK THIS OUT! Mindanao, Handa na ba kayo? Abangan ang pagdating ng mga exciting technologies at R&D outputs ng mga ahensya ng Department of Science and Technology (DOST) pagdating sa Disaster Prevention and Mitigation, Preparedness, Response, Rehabilitation, and Recovery.",
+        excerpt: "CHECK THIS OUT! Mindanao, Handa na ba kayo? Abangan ang pagdating ng mga exciting technologies at R&D outputs ... ",
+        archive_year: 2023,
+        is_featured: 0,
+        date_published: '2023-09-02'
+    },
+    {
+        id: 16,
+        title: 'Handa Pilipinas - TEASER!',
+        slug: 'Handa Pilipinas TEASER',
+        filename: 'Handa Pilipinas ',
+        file_type: 2,
+        material_type: 'Watch',
+        thumbnail: 'HandaPilipinas for posting.png',
+        youtube_url: 'https://www.facebook.com/DOSTph/videos/296628752744844/',
+        content: "CHECK THIS OUT! Safety matters! Don't wait for emergencies to strike. Be prepared and stay informed. We might not be able to stop natural hazards, but we can certainly minimize their impact through preparedness and knowledge. Introducing the 2023 Edition of RED: Your Reference for Emergency and Disaster! Get ready for its updated version, because this ultimate guide will equip you with the right information to safeguard lives and protect properties. Knowing and understanding hazards is the first step to safety. With RED, you'll get the updated information to prepare before natural hazards occur and take the appropriate actions to minimize its negative impact.",
+        excerpt: "Safety matters! Don't wait for emergencies to strike. Be prepared and stay informed. We might not ... ",
+        archive_year: 2023,
+        is_featured: 0,
+        date_published: '2023-07-18'
+    },
+    {
+        id: 18,
+        title: 'Handa Pilipinas sa Bagong Pilipinas Luzon Leg & RSTW in CAR',
+        slug: 'Handa Pilipinas sa Bagong Pilipinas Luzon Leg and RSTW in CAR',
+        filename: 'Paanyaya sa Handa Pilipinas',
+        file_type: 2,
+        material_type: 'Watch',
+        thumbnail: 'rstw.png',
+        youtube_url: 'https://www.facebook.com/pstobaguiobenguet/videos/1063011839145970/',
+        content: "𝙆𝘼𝙇𝘼𝙅𝙊, 𝙀𝙉𝘿𝘼𝙒 𝙆𝙄𝙏𝙊! Join us for an exciting celebration of Handa Pilipinas sa Bagong Pilipinas Luzon Leg and the 2025 Regional Science and Technology Week in CAR! Mark your calendars for August 7-9, 2025, in the city of Baguio. Huwag papalampasin!",
+        excerpt: "𝙆𝘼𝙇𝘼𝙅𝙊, 𝙀𝙉𝘿𝘼𝙒 𝙆𝙄𝙏𝙊! Join us for an exciting celebration of Handa Pilipinas sa Bagong Pilipinas Luzon Leg ...",
+        archive_year: 2023,
+        is_featured: 1,
+        date_published: '2025-07-16'
+    },
+
+
 
 ]

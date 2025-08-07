@@ -23,6 +23,7 @@ function VideosMainList({ videos = [] }) {
         otherVideos.push(item);
       }
     });
+    otherVideos.sort((a, b) => new Date(b.date_published) - new Date(a.date_published));
 
     setHighlight(highlights);
     setLatest(otherVideos);
@@ -36,7 +37,7 @@ function VideosMainList({ videos = [] }) {
             <MdBiotech className="text-xl md:text-2xl" />
             HIGHLIGHT VIDEO
           </h2>
-          <Link to={`/view-video/${slugText(highlight.title)}`}>
+          <Link to={`/view-video/${slugText(highlight.slug)}`}>
             <VideosHightlight hightlight={highlight}></VideosHightlight>
           </Link>
         </div>

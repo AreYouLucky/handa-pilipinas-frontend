@@ -10,7 +10,7 @@ function VideosMiniList({ latest = [] }) {
       <div className="grid grid-cols-2 gap-4 md:gap-4 montserrat-regular">
         {
           latest.slice(0, 4).map((item, i) => (
-            <Link to={`/view-video/${slugText(item.title)}`} key={i}>
+            <Link to={`/view-video/${slugText(item.slug)}`} key={i}>
               <article className="w-full md:px-2" >
                 <div className="relative h-[100px] w-full flex-shrink-0 overflow-hidden rounded-md border border-gray-400 shadow-lg md:h-[150px]">
                   <img

@@ -21,12 +21,13 @@ function Article() {
     const other = [];
     const normalizedTitle = title.toLowerCase();
     data.forEach(item => {
-      if (item.title.toLowerCase() === normalizedTitle) {
+      if (item.slug.toLowerCase() === normalizedTitle) {
         setArticle(item);
       } else if (item.file_type === 1) {
         other.push(item);
       }
     });
+    other.sort((a, b) => new Date(b.date_published) - new Date(a.date_published));
     setOthersArticles(other);
   }, [slug, title]);
 
@@ -42,7 +43,7 @@ function Article() {
             <Framer animation="fade-up">
               <div dangerouslySetInnerHTML={{ __html: purifyText(article.content || "") }} />
             </Framer>
-            <ShareLink article={article} slug={slug}/>
+            {/* <ShareLink article={article} slug={slug} /> */}
           </div>
           <div className='w-full md:mt-0 mt-8'>
             <Framer animation="zoom-in">

@@ -22,7 +22,7 @@ function VideoList() {
                 other.push(item);
             }
         });
-
+        other.sort((a, b) => new Date(b.date_published) - new Date(a.date_published));
         setLatest(other);
     }, []);
     return (
@@ -40,7 +40,7 @@ function VideoList() {
                                     HIGHLIGHT VIDEO
                                 </h2>
                                 <article>
-                                    <Link to={`/view-video/${slugText(highlight.title)}`} >
+                                    <Link to={`/view-video/${slugText(highlight.slug)}`} >
                                         <div className="group relative h-[300px] overflow-hidden rounded-xl border border-gray-400 md:h-[540px]">
                                             <div
                                                 className="absolute inset-0 bg-cover bg-center transition-transform duration-400 group-hover:scale-105"
@@ -87,7 +87,7 @@ function VideoList() {
                                 </h2>
                                 {
                                     latest.slice(0, 2).map((item, i) => (
-                                        <Link to={`/view-video/${slugText(item.title)}`} key={i}>
+                                        <Link to={`/view-video/${slugText(item.slug)}`} key={i}>
                                             <article className="w-full md:px-2 mb-5" >
                                                 <div className="relative h-[200px] w-full flex-shrink-0 overflow-hidden rounded-md border border-gray-400 shadow-lg md:h-[180px]">
                                                     <img
@@ -126,7 +126,7 @@ function VideoList() {
                             <div className="grid md:grid-cols-4 grid-cols-2 gap-4 md:gap-8 montserrat-regular">
                                 {
                                     latest.slice(2).map((item, i) => (
-                                        <Link to={`/view-video/${slugText(item.title)}`} key={i}>
+                                        <Link to={`/view-video/${slugText(item.slug)}`} key={i}>
                                             <article className="w-full">
                                                 <div className="relative h-[100px] w-full flex-shrink-0 overflow-hidden rounded-md border border-gray-400 shadow-lg md:h-[200px]">
                                                     <img

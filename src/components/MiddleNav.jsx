@@ -4,7 +4,6 @@ import { IoHomeOutline, IoNewspaperOutline } from "react-icons/io5";
 import { MdOutlinePermMedia } from "react-icons/md";
 import { GrTechnology } from "react-icons/gr";
 import { FiInfo } from "react-icons/fi";
-import { RiContactsBook3Line } from "react-icons/ri";
 
 function MiddleNav() {
   const location = useLocation();
@@ -39,6 +38,8 @@ function MiddleNav() {
       <div className="w-full py-4 px-4">
         <div className="flex w-full items-center justify-between">
           <div className="flex items-center space-x-4 text-slate-800">
+            {/* ABOUT */}
+            {renderLink("/", "HOME", IoHomeOutline)}
 
             {/* ABOUT */}
             {renderLink("/about", "ABOUT", FiInfo)}
@@ -46,7 +47,7 @@ function MiddleNav() {
             {/* FEATURED TECHNOLOGIES */}
             {renderLink("/technologies", "FEATURED TECHNOLOGIES", GrTechnology)}
 
-            {/* RESOURCES DROPDOWN */}
+            {/* RESOURCES DROPDOWN
             <div className="relative">
               <button
                 onClick={() => toggleDropdown("resources")}
@@ -79,7 +80,7 @@ function MiddleNav() {
                   </ul>
                 </div>
               )}
-            </div>
+            </div> */}
 
             {/* MEDIA DROPDOWN */}
             <div className="relative">
@@ -111,7 +112,7 @@ function MiddleNav() {
                 <div className="absolute left-0 mt-2 w-64 bg-white border border-gray-200 rounded-md shadow-lg z-50">
                   <ul className="py-2 text-sm text-gray-700">
                     {renderLink("/press-release", "Press Release")}
-                    {renderLink("/speeches", "Speeches")}
+                    {/* {renderLink("/speeches", "Speeches")} */}
                     {renderLink("/archives", "Archives")}
                     {renderLink("/photos", "Photos")}
                     {renderLink("/videos", "Videos")}
