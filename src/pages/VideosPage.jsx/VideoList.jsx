@@ -53,8 +53,7 @@ function VideoList() {
                                                         xmlns="http://www.w3.org/2000/svg"
                                                         fill="currentColor"
                                                         viewBox="0 0 24 24"
-                                                        className="h-8 w-8"
-                                                    >
+                                                        className="h-8 w-8">
                                                         <path d="M8 5v14l11-7z" />
                                                     </svg>
                                                 </button>
@@ -150,7 +149,6 @@ function VideoList() {
                                         </Link>
                                     ))
                                 }
-
                             </div>
                         </div>
                     </Framer>

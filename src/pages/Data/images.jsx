@@ -1,300 +1,300 @@
 export const images = [
   {
-    "img": "house_rep1.jpg",
+    "img": "house_rep-1.jpg",
     "src": "handa-pilipinas-at-house-of-representatives",
     "id": 1,
     "type": "gallery"
   },
   {
-    "img": "house_rep2.jpg",
+    "img": "house_rep-2.jpg",
     "src": "handa-pilipinas-at-house-of-representatives",
     "id": 2,
     "type": "gallery"
   },
   {
-    "img": "house_rep3.jpg",
+    "img": "house_rep-3.jpg",
     "src": "handa-pilipinas-at-house-of-representatives",
     "id": 3,
     "type": "gallery"
   },
   {
-    "img": "house_rep4.jpg",
+    "img": "house_rep-4.jpg",
     "src": "handa-pilipinas-at-house-of-representatives",
     "id": 4,
     "type": "gallery"
   },
   {
-    "img": "house_rep5.jpg",
+    "img": "house_rep-5.jpg",
     "src": "handa-pilipinas-at-house-of-representatives",
     "id": 5,
     "type": "gallery"
   },
   {
-    "img": "house_rep6.jpg",
+    "img": "house_rep-6.jpg",
     "src": "handa-pilipinas-at-house-of-representatives",
     "id": 6,
     "type": "gallery"
   },
   {
-    "img": "house_rep7.jpg",
+    "img": "house_rep-7.jpg",
     "src": "handa-pilipinas-at-house-of-representatives",
     "id": 7,
     "type": "gallery"
   },
   {
-    "img": "house_rep8.jpg",
+    "img": "house_rep-8.jpg",
     "src": "handa-pilipinas-at-house-of-representatives",
     "id": 8,
     "type": "gallery"
   },
   {
-    "img": "house_rep9.jpg",
+    "img": "house_rep-9.jpg",
     "src": "handa-pilipinas-at-house-of-representatives",
     "id": 9,
     "type": "gallery"
   },
   {
-    "img": "house_rep10.jpg",
+    "img": "house_rep-10.jpg",
     "src": "handa-pilipinas-at-house-of-representatives",
     "id": 10,
     "type": "gallery"
   },
   {
-    "img": "house_rep11.jpg",
+    "img": "house_rep-11.jpg",
     "src": "handa-pilipinas-at-house-of-representatives",
     "id": 11,
     "type": "gallery"
   },
   {
-    "img": "house_rep12.jpg",
+    "img": "house_rep-12.jpg",
     "src": "handa-pilipinas-at-house-of-representatives",
     "id": 12,
     "type": "gallery"
   },
   {
-    "img": "house_rep13.jpg",
+    "img": "house_rep-13.jpg",
     "src": "handa-pilipinas-at-house-of-representatives",
     "id": 13,
     "type": "gallery"
   },
   {
-    "img": "house_rep14.jpg",
+    "img": "house_rep-14.jpg",
     "src": "handa-pilipinas-at-house-of-representatives",
     "id": 14,
     "type": "gallery"
   },
   {
-    "img": "house_rep15.jpg",
+    "img": "house_rep-15.jpg",
     "src": "handa-pilipinas-at-house-of-representatives",
     "id": 15,
     "type": "gallery"
   },
   {
-    "img": "house_rep16.jpg",
+    "img": "house_rep-16.jpg",
     "src": "handa-pilipinas-at-house-of-representatives",
     "id": 16,
     "type": "gallery"
   },
   {
-    "img": "house_rep17.jpg",
+    "img": "house_rep-17.jpg",
     "src": "handa-pilipinas-at-house-of-representatives",
     "id": 17,
     "type": "gallery"
   },
   {
-    "img": "house_rep18.jpg",
+    "img": "house_rep-18.jpg",
     "src": "handa-pilipinas-at-house-of-representatives",
     "id": 18,
     "type": "gallery"
   },
   {
-    "img": "house_rep19.jpg",
+    "img": "house_rep-19.jpg",
     "src": "handa-pilipinas-at-house-of-representatives",
     "id": 19,
     "type": "gallery"
   },
   {
-    "img": "house_rep20.jpg",
+    "img": "house_rep-20.jpg",
     "src": "handa-pilipinas-at-house-of-representatives",
     "id": 20,
     "type": "gallery"
   },
   {
-    "img": "house_rep21.jpg",
+    "img": "house_rep-21.jpg",
     "src": "handa-pilipinas-at-house-of-representatives",
     "id": 21,
     "type": "gallery"
   },
   {
-    "img": "house_rep22.jpg",
+    "img": "house_rep-22.jpg",
     "src": "handa-pilipinas-at-house-of-representatives",
     "id": 22,
     "type": "gallery"
   },
   {
-    "img": "house_rep23.jpg",
+    "img": "house_rep-23.jpg",
     "src": "handa-pilipinas-at-house-of-representatives",
     "id": 23,
     "type": "gallery"
   },
   {
-    "img": "house_rep24.jpg",
+    "img": "house_rep-24.jpg",
     "src": "handa-pilipinas-at-house-of-representatives",
     "id": 24,
     "type": "gallery"
   },
   {
-    "img": "house_rep25.jpg",
+    "img": "house_rep-25.jpg",
     "src": "handa-pilipinas-at-house-of-representatives",
     "id": 25,
     "type": "gallery"
   },
   {
-    "img": "house_rep26.jpg",
+    "img": "house_rep-26.jpg",
     "src": "handa-pilipinas-at-house-of-representatives",
     "id": 26,
     "type": "gallery"
   },
   {
-    "img": "house_rep27.jpg",
+    "img": "house_rep-27.jpg",
     "src": "handa-pilipinas-at-house-of-representatives",
     "id": 27,
     "type": "gallery"
   },
   {
-    "img": "house_rep28.jpg",
+    "img": "house_rep-28.jpg",
     "src": "handa-pilipinas-at-house-of-representatives",
     "id": 28,
     "type": "gallery"
   },
   {
-    "img": "house_rep29.jpg",
+    "img": "house_rep-29.jpg",
     "src": "handa-pilipinas-at-house-of-representatives",
     "id": 29,
     "type": "gallery"
   },
   {
-    "img": "house_rep30.jpg",
+    "img": "house_rep-30.jpg",
     "src": "handa-pilipinas-at-house-of-representatives",
     "id": 30,
     "type": "gallery"
   },
   {
-    "img": "house_rep31.jpg",
+    "img": "house_rep-31.jpg",
     "src": "handa-pilipinas-at-house-of-representatives",
     "id": 31,
     "type": "gallery"
   },
   {
-    "img": "house_rep32.jpg",
+    "img": "house_rep-32.jpg",
     "src": "handa-pilipinas-at-house-of-representatives",
     "id": 32,
     "type": "gallery"
   },
   {
-    "img": "house_rep33.jpg",
+    "img": "house_rep-33.jpg",
     "src": "handa-pilipinas-at-house-of-representatives",
     "id": 33,
     "type": "gallery"
   },
   {
-    "img": "house_rep34.jpg",
+    "img": "house_rep-34.jpg",
     "src": "handa-pilipinas-at-house-of-representatives",
     "id": 34,
     "type": "gallery"
   },
   {
-    "img": "house_rep35.jpg",
+    "img": "house_rep-35.jpg",
     "src": "handa-pilipinas-at-house-of-representatives",
     "id": 35,
     "type": "gallery"
   },
   {
-    "img": "house_rep36.jpg",
+    "img": "house_rep-36.jpg",
     "src": "handa-pilipinas-at-house-of-representatives",
     "id": 36,
     "type": "gallery"
   },
   {
-    "img": "house_rep37.jpg",
+    "img": "house_rep-37.jpg",
     "src": "handa-pilipinas-at-house-of-representatives",
     "id": 37,
     "type": "gallery"
   },
   {
-    "img": "house_rep38.jpg",
+    "img": "house_rep-38.jpg",
     "src": "handa-pilipinas-at-house-of-representatives",
     "id": 38,
     "type": "gallery"
   },
   {
-    "img": "house_rep39.jpg",
+    "img": "house_rep-39.jpg",
     "src": "handa-pilipinas-at-house-of-representatives",
     "id": 39,
     "type": "gallery"
   },
   {
-    "img": "house_rep40.jpg",
+    "img": "house_rep-40.jpg",
     "src": "handa-pilipinas-at-house-of-representatives",
     "id": 40,
     "type": "gallery"
   },
   {
-    "img": "house_rep41.jpg",
+    "img": "house_rep-41.jpg",
     "src": "handa-pilipinas-at-house-of-representatives",
     "id": 41,
     "type": "gallery"
   },
   {
-    "img": "house_rep42.jpg",
+    "img": "house_rep-42.jpg",
     "src": "handa-pilipinas-at-house-of-representatives",
     "id": 42,
     "type": "gallery"
   },
   {
-    "img": "house_rep43.jpg",
+    "img": "house_rep-43.jpg",
     "src": "handa-pilipinas-at-house-of-representatives",
     "id": 43,
     "type": "gallery"
   },
   {
-    "img": "house_rep44.jpg",
+    "img": "house_rep-44.jpg",
     "src": "handa-pilipinas-at-house-of-representatives",
     "id": 44,
     "type": "gallery"
   },
   {
-    "img": "house_rep45.jpg",
+    "img": "house_rep-45.jpg",
     "src": "handa-pilipinas-at-house-of-representatives",
     "id": 45,
     "type": "gallery"
   },
   {
-    "img": "house_rep46.jpg",
+    "img": "house_rep-46.jpg",
     "src": "handa-pilipinas-at-house-of-representatives",
     "id": 46,
     "type": "gallery"
   },
   {
-    "img": "house_rep47.jpg",
+    "img": "house_rep-47.jpg",
     "src": "handa-pilipinas-at-house-of-representatives",
     "id": 47,
     "type": "gallery"
   },
   {
-    "img": "house_rep48.jpg",
+    "img": "house_rep-48.jpg",
     "src": "handa-pilipinas-at-house-of-representatives",
     "id": 48,
     "type": "gallery"
   },
   {
-    "img": "house_rep49.jpg",
+    "img": "house_rep-49.jpg",
     "src": "handa-pilipinas-at-house-of-representatives",
     "id": 49,
     "type": "gallery"
   },
   {
-    "img": "house_rep50.jpg",
+    "img": "house_rep-50.jpg",
     "src": "handa-pilipinas-at-house-of-representatives",
     "id": 50,
     "type": "gallery"

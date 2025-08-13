@@ -4,13 +4,9 @@ import { useState, useEffect } from "react";
 import { data } from "../Data/data";
 import Framer from "../../components/Framer";
 import Partners from "./Partials/Partners";
-import { Worker } from '@react-pdf-viewer/core';
-import { Viewer } from '@react-pdf-viewer/core';
-import '@react-pdf-viewer/core/lib/styles/index.css';
 import { FaBookOpen } from "react-icons/fa6";
-import { zoomPlugin } from '@react-pdf-viewer/zoom';
-import '@react-pdf-viewer/core/lib/styles/index.css';
-import '@react-pdf-viewer/zoom/lib/styles/index.css';
+import LearningMaterials from "./Partials/LearningMaterials";
+
 function Home() {
   const [articles, setArticles] = useState([]);
   const [videos, setVideos] = useState([]);
@@ -20,8 +16,6 @@ function Home() {
     filterVideos();
   }, []);
 
-  const zoomPluginInstance = zoomPlugin();
-  const { ZoomInButton, ZoomOutButton } = zoomPluginInstance;
 
   const filterVideos = () => {
     const filtered = data.filter(item => item.file_type === 2);
@@ -44,29 +38,15 @@ function Home() {
           <VideosMainList videos={videos} />
         </Framer>
         <Framer animation="fade-up">
-          <div className="m-auto w-full max-w-screen-2xl flex justify-between bg-gray-50 items-center rounded-lg my-5 px-4">
-            <div className="hidden md:block">
-            </div>
+          <div className="mx-auto w-full max-w-screen-2xl flex justify-center flex-col items-center my-7 px-4 border-t border-gray-400 py-4">
             <div>
-              <h2 className="text-sm montserrat-bold my-4 flex items-center rounded-full py-1 font-bold text-gray-700 md:text-2xl justify-center">
+              <h2 className="text-sm montserrat-bold my-4 flex items-center rounded-full py-1 font-bold text-gray-700 md:text-2xl justify-center w-full">
                 <FaBookOpen className="text-2xl md:text-3xl mr-3" />
-                REFERENCE FOR EMERGENCY AND DISASTER BOOK
+                REFERENCE BOOKS
               </h2>
             </div>
-            <div className="flex justify-end gap-2 p-2  ">
-              <ZoomOutButton />
-              <ZoomInButton />
-            </div>
+            <LearningMaterials />
           </div>
-          <a href="/pdf/RED_Book.pdf" target="_blank" rel="noopener noreferrer">
-            <div className="m-auto w-full max-w-screen-2xl max-h-[80vh] overflow-y-scroll  px-8 py-0 text-gray-800 md:px-2 mt-5 mb-10">
-              <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js">
-                <Viewer fileUrl="/pdf/RED_Book.pdf"
-                  plugins={[zoomPluginInstance]}
-                  defaultScale={1.25} />
-              </Worker>
-            </div>
-          </a>
         </Framer>
         <Framer animation="fade-right">
           <Partners />

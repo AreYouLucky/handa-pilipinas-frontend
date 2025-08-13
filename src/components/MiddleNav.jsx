@@ -15,8 +15,9 @@ function MiddleNav() {
     setOpenDropdown((prev) => (prev === name ? null : name));
   };
 
-  const navItemStyle =
-    "flex items-center gap-2 px-4 py-2 text-base text-gray-700 hover:text-red-400 transition duration-200 montserrat-bold";
+const navItemStyle =
+  "flex items-center gap-2 px-4 py-2 text-sm md:text-base text-gray-700 hover:text-red-400 transition duration-200 montserrat-bold";
+
   const highlight = "text-red-500 font-semibold bg-gray-200 ";
 
   const renderLink = (to, label, Icon) => (
@@ -26,7 +27,7 @@ function MiddleNav() {
       onClick={() => setOpenDropdown(null)}
     >
       <div className={`${navItemStyle} ${url === to ? highlight : ""}`}>
-        {Icon && <Icon className="text-xl" />}
+        {Icon && <Icon className=" text-sm md:text-lg" />}
         {label}
       </div>
     </Link>
@@ -37,7 +38,7 @@ function MiddleNav() {
     <section className="relative z-[9999] hidden w-full justify-center md:flex">
       <div className="w-full py-4 px-4">
         <div className="flex w-full items-center justify-between">
-          <div className="flex items-center space-x-4 text-slate-800">
+          <div className="flex items-center space-x-2 text-slate-800">
             {/* ABOUT */}
             {renderLink("/", "HOME", IoHomeOutline)}
 
@@ -47,7 +48,7 @@ function MiddleNav() {
             {/* FEATURED TECHNOLOGIES */}
             {renderLink("/technologies", "FEATURED TECHNOLOGIES", GrTechnology)}
 
-            {/* RESOURCES DROPDOWN
+            {/* RESOURCES DROPDOWN */}
             <div className="relative">
               <button
                 onClick={() => toggleDropdown("resources")}
@@ -73,14 +74,14 @@ function MiddleNav() {
               </button>
               {openDropdown === "resources" && (
                 <div className="absolute left-0 mt-2 w-64 bg-white border border-gray-200 rounded-md shadow-lg z-50">
-                  <ul className="py-2 text-sm text-gray-700">
-                    {renderLink("/policies-and-laws", "DRR Policies and Laws")}
+                  <ul className=" text-sm sm:text-base md:text-lg text-gray-700">
+                    {/* {renderLink("/policies-and-laws", "DRR Policies and Laws")} */}
                     {renderLink("/learning-materials", "Learning Materials")}
-                    {renderLink("/drr-stats", "DRR Stats")}
+                    {/* {renderLink("/drr-stats", "DRR Stats")} */}
                   </ul>
                 </div>
               )}
-            </div> */}
+            </div>
 
             {/* MEDIA DROPDOWN */}
             <div className="relative">
@@ -110,7 +111,7 @@ function MiddleNav() {
               </button>
               {openDropdown === "media" && (
                 <div className="absolute left-0 mt-2 w-64 bg-white border border-gray-200 rounded-md shadow-lg z-50">
-                  <ul className="py-2 text-sm text-gray-700">
+                  <ul className="text-sm sm:text-base md:text-lg text-gray-700">
                     {renderLink("/press-release", "Press Release")}
                     {/* {renderLink("/speeches", "Speeches")} */}
                     {renderLink("/archives", "Archives")}

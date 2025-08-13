@@ -30,7 +30,7 @@ function Navbar() {
         </div>
 
         {/* Desktop Nav */}
-        <div className="hidden md:flex w-full items-center justify-between gap-8">
+        <div className="hidden md:flex w-full items-center justify-between gap-0 lg:gap-8">
           <MiddleNav />
           <SearchBox />
         </div>
@@ -76,8 +76,8 @@ function Navbar() {
               </Link>
             </li>
 
-            {/* RESOURCES Dropdown */}
-            {/* <li>
+            {/* RESOURCES Dropdown  */}
+             <li>
               <button
                 onClick={() => setIsResourcesOpen(!isResourcesOpen)}
                 className="w-full flex items-center justify-between p-2"
@@ -91,9 +91,9 @@ function Navbar() {
               {isResourcesOpen && (
                 <ul className="pl-4 mt-2 space-y-1">
                   {[
-                    { to: "/policies-and-laws", label: "DRR Policies and Laws" },
+                    // { to: "/policies-and-laws", label: "DRR Policies and Laws" },
                     { to: "/learning-materials", label: "Learning Materials" },
-                    { to: "/drr-stats", label: "DRR Stats" },
+                    // { to: "/drr-stats", label: "DRR Stats" },
                   ].map(({ to, label }) => (
                     <li key={to} className={url === to ? 'bg-gray-200 rounded-md' : ''}>
                       <Link to={to} className={`block p-2 ${navigation_text} pl-4`}>
@@ -103,7 +103,7 @@ function Navbar() {
                   ))}
                 </ul>
               )}
-            </li> */}
+            </li>
 
             {/* MEDIA Dropdown */}
             <li>

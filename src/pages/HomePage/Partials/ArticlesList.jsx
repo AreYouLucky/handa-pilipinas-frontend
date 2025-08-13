@@ -42,7 +42,7 @@ function ArticlesList({ latest = [] }) {
 
       <div className="mt-4 flex w-full justify-center">
         <Link to={`/press-release`}>
-          <span className="montserrat-regular flex cursor-pointer items-center justify-center gap-x-2 rounded-full px-3 py-1 text-sm font-medium text-gray-700 duration-150 hover:border hover:bg-black hover:text-white md:inline-flex">
+          <span className="montserrat-regular flex cursor-pointer items-center justify-center gap-x-2 rounded-full px-3 py-1 text-sm font-medium text-gray-700 duration-150 border hover:bg-black hover:text-white md:inline-flex">
             View More <MdOutlineReadMore className="text-2xl" />
           </span>
         </Link>

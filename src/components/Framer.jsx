@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 const Framer = ({ children, animation = 'fade-up' }) => {
   const { ref, inView } = useInView({
     triggerOnce: false, 
-    threshold: 0.05,
+    threshold: 0.045,
   });
 
   const animations = {

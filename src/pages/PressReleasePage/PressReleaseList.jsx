@@ -86,7 +86,7 @@ function PressReleaseList() {
                                     </h4>
                                 </div>
                                 {
-                                    latest.slice(0, 5).map((item, i) => (
+                                    latest.slice(0, 4).map((item, i) => (
                                         <Link to={`/view-article/${slugText(item.slug)}`} key={i} >
                                             <div className="flex w-full gap-4 border-b border-gray-400 py-3 duration-300 hover:scale-[1.03]">
                                                 <div className="aspect-square w-[100px] flex-shrink-0 overflow-hidden rounded-md shadow-lg">

@@ -39,7 +39,11 @@ export const router = createBrowserRouter([
       { path: "/learning-materials", element: <LearningMaterials /> },
       { path: "/drr-stats", element: <DRRStats /> },
     ],
+    future: {
+      v7_relativeSplatPath: true,
+    },
   },
+
 ]);
 // import { Route, createRoutesFromElements } from "react-router-dom";
 // import App from "../App";
