@@ -43,7 +43,6 @@ export const router = createBrowserRouter([
       v7_relativeSplatPath: true,
     },
   },
-
 ]);
 // import { Route, createRoutesFromElements } from "react-router-dom";
 // import App from "../App";

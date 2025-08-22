@@ -1344,9 +1344,98 @@ export const data = [
     is_featured: 0,
     date_published: ''
   },
-
-
-
-
+  {
+    id: 21,
+    title: 'Technology is Not Enough',
+    slug: 'technology is not enough',
+    filename: 'technologyisnotenough.png',
+    file_type: 2,
+    material_type: 'Reels',
+    thumbnail: 'technologyisnotenough.png',
+    youtube_url: 'https://www.facebook.com/reel/1894813267918087/?rdid=YKuJji9xAhV6PuPM',
+    content: " 𝗜𝗖𝗬𝗠𝗜: DOST Sec. Solidum believes that technology alone isn't enough, as every Filipino is an innovator. “Bida ang HANDA” means everyone can act. DOST brings science beyond labs—to DRRM councils, LGUs, youth, the private sector, and the public.",
+    excerpt: "𝗜𝗖𝗬𝗠𝗜: DOST Sec. Solidum believes that technology alone isn't enough, as every Filipino is an innovator.",
+    archive_year: 2025,
+    is_featured: 0,
+    date_published: '2025-08-07'
+  },
+  {
+    id: 22,
+    title: "Baguio City Government Backs DOST's Disaster Risk Reduction and Management Initiatives",
+    slug: 'Baguio City Government Backs DOSTs Disaster Risk Reduction and Management Initiatives',
+    filename: 'govbaguio.png',
+    file_type: 2,
+    material_type: 'Reels',
+    thumbnail: 'govbaguio.png',
+    youtube_url: 'https://www.facebook.com/reel/760451796397663/?rdid=PlHT2C5Vphh4Y2PY',
+    content: "𝗜𝗖𝗬𝗠𝗜: Baguio City Mayor Magalong, through Vice Mayor Olowan, stressed that science and innovation are vital in the face of climate threats. The city embraces data, research, and partnerships to build smart, resilient, and sustainable communities.",
+    excerpt: "𝗜𝗖𝗬𝗠𝗜: Baguio City Mayor Magalong, through Vice Mayor Olowan, stressed that science and innovation are vital...",
+    archive_year: 2025,
+    is_featured: 0,
+    date_published: '2025-08-08'
+  },
+  {
+    id: 23,
+    title: "DOST-PNRI Showcases Early Warning Radiation Monitoring Equipment",
+    slug: 'DOST PNRI Showcases Early Warning Radiation Monitoring Equipment',
+    filename: 'christopher.png',
+    file_type: 2,
+    material_type: 'Reels',
+    thumbnail: 'christopher.png',
+    youtube_url: 'https://www.facebook.com/reel/4130189733912727/?rdid=QcYJgpGIE7R1blVv',
+    content: "Mr. Christopher Mendoza, Senior Science Research Specialist at DOST-PNRI, talks about the utilization of Early Warning Radiation Monitoring Equipment used to detect potential radiation incidents and emergencies in specific areas.",
+    excerpt: "The utilization of Early Warning Radiation Monitoring Equipment used to detect potential radiation ...",
+    archive_year: 2025,
+    is_featured: 0,
+    date_published: '2025-08-09'
+  },
+  {
+    id: 24,
+    title: "DOST-PHIVOLCS Showcases REDAS for Rapid Disaster Damage Assessment",
+    slug: 'DOST PHIVOLCS Showcases REDAS for Rapid Disaster Damage Assessment',
+    filename: 'christopher.png',
+    file_type: 2,
+    material_type: 'Reels',
+    thumbnail: 'Rapid Earthquake Damage Assessment.png',
+    youtube_url: 'https://www.facebook.com/reel/1296818698818695/?rdid=JFKrw3SEnUmP4Z0O',
+    content: "Mr. John Deladia, Project Technical Specialist from DOST-PHIVOLCS, gives a live demonstration of the Rapid Earthquake Damage Assessment System (REDAS) during the Technology Exhibit at the Newtown Convention Center in Baguio City. The REDAS software helps assess possible earthquake damage quickly to guide emergency response and planning. At present, REDAS can compute for Impacts of earthquake, severe wind, floods, tsunami, lahars, and crop damages.",
+    excerpt: "Live demonstration of the Rapid Earthquake Damage Assessment System (REDAS) during the Technology...",
+    archive_year: 2025,
+    is_featured: 0,
+    date_published: '2025-08-09'
+  },
+  {
+    id: 25,
+    title: 'From warnings to actions: How science-based solutions empower LGUs to build resilient, smarter, and safer communities',
+    slug: 'From warnings to actions How science based solutions empower LGUs to build resilient smarter and safer communities',
+    filename: '',
+    file_type: 1,
+    material_type: 'Article',
+    youtube_url: '',
+    thumbnail: 'From warnings to actions How science based solutions empower LGUs to build resilient smarter and safer communities.jpg',
+    content: `<p class="font-semibold text-2xl mb-4 montserrat-bold"><strong>From warnings to actions: How science-based solutions empower LGUs to build resilient, smarter, and safer communities</strong></p>
+    <img src="/images/articles/From warnings to actions How science based solutions empower LGUs to build resilient smarter and safer communities.jpg" name="image3.png" align="bottom" width="100%" height="100%" border="0" />
+    <p class="mt-6 mb-6 leading-relaxed montserrat-regular">The Cordillera Administrative Region (CAR) is renowned for its breathtaking landscapes&mdash;dramatic mountain ranges, steep slopes, towering peaks, and winding valleys shaped by its rugged terrain. However, this striking topography also brings significant challenges. The region's loose soil, combined with heavy rainfall and frequent seismic activity, makes the region vulnerable to landslides.</p>
+    <p class="mt-6 mb-6 leading-relaxed montserrat-regular">These natural hazards pose risks not only to infrastructure and livelihoods but also to the safety and resilience of the communities that call the highlands home.</p>
+    <p class="mt-6 mb-6 leading-relaxed montserrat-regular">Once overwhelmed by disasters, LGUs across the Philippines are now emerging as champions of innovation, thanks to science-backed tools, capacity building, and community-driven technologies that are transforming preparedness into resilience.</p>
+    <p class="mt-6 mb-6 leading-relaxed montserrat-regular">&ldquo;<em>Nandyan din yung banta ng bagyo at ulan, at nakita din natin yung kahalagahan ng gabay sa ating mga kababayan. Una, sa impormasyon na p&rsquo;wede kong ibigay sa kanila. Yung science-based information. Pangalawa, yung teknolohiya para mabigyan sila sa posibleng solusyon sa hinaharap nilang problema, at s&rsquo;yempre, yung training o kasanayan na kailangan ibigay natin</em>,&rdquo; said DOST Secretary Renato U. Solidum Jr during the 2025 HANDA Pilipinas press conference in Baguio City.</p>
+    <p class="mt-6 mb-6 leading-relaxed montserrat-regular">(There&rsquo;s also the threat of storms and rain, and we&rsquo;ve seen the importance of guidance for our fellow citizens. First, in the form of information the DOST can provide them &mdash; science-based information. Second, technology that can offer possible solutions to the problems they may face in the future. And of course, the training or skills that we need to provide them.)</p>
+    <p class="mt-6 mb-6 leading-relaxed montserrat-regular">Albert A. Mogul, Regional Director of the Office of Civil Defense&ndash;CAR (OCD-CAR), highlighted the remarkable progress in disaster risk reduction in the region. He noted that in the wake of Typhoon Ompong in 2018, which tragically claimed 116 lives, the number of casualties from subsequent weather disturbances, including the Habagat and several typhoons, has significantly dropped to as few as five. This dramatic decrease underscored the effectiveness of science-based strategies, strengthened local capacities, and early warning systems in mitigating the impacts of natural disasters. The message is clear: science-based planning saves lives.</p>
+    <p class="mt-6 mb-6 leading-relaxed montserrat-regular">Central to this transformation is the DOST&rsquo;s GeoRiskPH platform&mdash;a suite of geospatial tools enabling early warnings, hazard mapping, and risk-informed decision-making.</p>
+    <p class="mt-6 mb-6 leading-relaxed montserrat-regular">&nbsp;&ldquo;<em>Empowering local minds, capacitation of our people&mdash;because hindi lang sila recipient ng ayuda or di kaya ay pakiki-pagtilulungan sa kanila, imbes posible ang solusyon ay manggaling sa kanila</em>,&rdquo; underscores Sec. Solidum.</p>
+    <p class="mt-6 mb-6 leading-relaxed montserrat-regular">DILG-CAR Regional Director Anthony C. Nuyda emphasized the importance of local government units (LGUs) adopting evidence-based tools and innovations. He noted that without using the technologies developed by the Department of Science and Technology (DOST), LGUs will not be fully prepared to tackle the challenges they encounter &mdash; particularly in disaster risk reduction. &ldquo;<em>Hindi po magiging prepared ang LGU if they are not using or even relying on all the science-based technologies na na-developed po ng DOST. So, DILG is in full support.</em>&rdquo;</p>
+    <p class="mt-6 mb-6 leading-relaxed montserrat-regular">According to Sec. Solidum, around 223 LGUs and thousands of DRRM representatives have been trained on the GeoRisk platform. These efforts have empowered communities to make informed, life-saving decisions during calamities such as Typhoon Ulysses and other seismic activities.</p>
+    <p class="mt-6 mb-6 leading-relaxed montserrat-regular">This shift was on full display during the HANDA Pilipinas event series, where LGUs interacted directly with technology developers, scientists, and fellow innovators. Beyond a traditional exhibit, HANDA Pilipinas is a launchpad for sustained engagement, showcasing scalable technologies, which supports the commercialization of disaster resilience tools such as the MCCOV (The Mobile Command and Control Vehicle) and localized flood sensors.</p>
+    <p class="mt-6 mb-6 leading-relaxed montserrat-regular">The result? LGUs like Baguio City are transitioning into smart, sustainable communities, supported by DOST&rsquo;s modular development frameworks such as iSTART and CEST. These roadmaps provide flexible, data-informed pathways for local governments to evolve, regardless of size or geographic challenge.</p>
+    <p class="mt-6 mb-6 leading-relaxed montserrat-regular">&ldquo;This HANDA Pilipinas is a game changer. <em>May concrete accomplishments. Pag-alis po ng HANDA Pilipinas, tuloy-tuloy po yung engagements with the LGUs, tuloy-tuloy po ang deployment ng technologies, and as mentioned, bumababa ang ating casualties</em>,&rdquo; said DOST Undersecretary for Regional Operations Sancho Maborrang.</p>
+    <p class="mt-6 mb-6 leading-relaxed montserrat-regular">Furthermore, Sec. Solidum underscores a fundamental motivation driving communities&rsquo; involvement, not external rewards or mandates, but their own survival and safety. He emphasizes that participation in preparedness efforts is not merely encouraged; it is imperative. &ldquo;<em>The real incentive for LGUs is their own safety. It&rsquo;s a must for them to participate kasi incentive sa kanila yung preparedness nila,</em>&rdquo; he concluded.</p>
+    <p class="mt-6 mb-6 leading-relaxed montserrat-regular">Looking ahead, the DOST aims to scale its vision of attaining smart and sustainable cities, towns, and provinces nationwide, with over 90 pilot LGUs already making significant progress. As more local leaders embrace science and technology, the country moves closer to a future where every community is not just prepared for disaster, but resilient and future-ready.</p>
+    <p class="mt-6 mb-6 leading-relaxed montserrat-regular">The DOST aims to provide science-based, innovative, and inclusive solutions across the four strategic pillars: human well-being, wealth creation, wealth protection, and sustainability. These pillars embody the mantra OneDOST4U: Solutions, Opportunities for All. For more information, visit <a href="http://www.dost.gov.ph">www.dost.gov.ph</a><strong><em>. (By Abigael S. Oma&ntilde;a, DOST-STII)</em></strong></p>
+                  `,
+    excerpt: 'The Cordillera Administrative Region (CAR) is renowned for its breathtaking landscapes&mdash;dramatic mountain ranges, steep slopes... ',
+    archive_year: 2025,
+    is_featured: 0,
+    date_published: '2025-08-15'
+  },
 
 ]

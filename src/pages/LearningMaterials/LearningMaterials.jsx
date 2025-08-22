@@ -29,7 +29,7 @@ function LearningMaterials() {
                                         <div className='overflow-hidden rounded-lg shadow-md border border-gray-300 p-3 relative'>
                                             <div className='w-full rounded-lg overflow-hidden relative'>
                                                 <img src={`/images/thumbnails/${item.thumbnail}`} className='w-full  hover:scale-105 rounded-lg duration-300 h-full' />
-                                                <div className='absolute w-full bg-gray-800/80 z-50 py-5 bottom-0 px-3'>
+                                                <div className='absolute w-full bg-gray-800/80 z-30 py-5 bottom-0 px-3'>
                                                     <ReadBooksBtn />
                                                 </div>
                                             </div>
